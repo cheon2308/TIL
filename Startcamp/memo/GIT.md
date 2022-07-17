@@ -22,29 +22,28 @@
 
    > git add 파일이름 파일이름 파일이름
 
-2. git commit -m " 내용 "
-
-3. commit
+4. commit
 
    > git config --global user.email "you@example.com"
    >
    > git config --global user.name "Your Name"
    >
    > 이용하여 저장
+   > git commit -m " 내용 "
 
    
 
-4. git log 로 변경 내용 확인가능
+5. git log 로 변경 내용 확인가능
 
-> ​	git log --oneline으로 간편히 보기 가능
->
-> ​	이 때 나오는 5b794c6 이런 숫자가 컴퓨터 인식 이름
->
-> ​	head -> master 에서 head는 branch 이름 
+   > ​	git log --oneline으로 간편히 보기 가능
+   >
+   > ​	이 때 나오는 5b794c6 이런 숫자가 컴퓨터 인식 이름
+   >
+   > ​	head -> master 에서 head는 branch 이름 
 
 ​	**저장 후 수정하고 다시 log확인 시 저장되었던 파일에서 only 수정된 내용이 나타나는 것**
 
-5. git push
+6. 원격 저장소
 
    >위에 저장 한 것을 다른 곳에서도 볼 수 있게 하는 ''원격저장소''
    >
@@ -52,9 +51,14 @@
    >
    > git remote -v 원격저장 주소 보기
 
-6. 단축 명령어
+7. 단축 명령어
 
-   >-u = upload, -v = view
+   >-u = upload, -v = view4
+
+8. Git에서 가져 오기 
+   > 최초로 가져올시 git clone 주소
+   > 그 뒤 수정사항 가져올 때는 git pull 저장장소 master
+
 
 ## 기본기
 
