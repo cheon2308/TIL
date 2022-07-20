@@ -137,3 +137,29 @@ for i in sen:
         break
 print(sta)
 ```
+
+# 4. 고기값 출력
+
+```python
+steak =  float(50000)
+vat  =   float(steak * 1.15)
+total =  float(steak + vat)
+
+print(f'steak가격은 {steak}원이고 vat 금액 {vat}원이 포함되어 총 {total}원 입니다.')
+```
+
+# 5. 제일 비싼 농작물
+
+```python
+veg = [('고구마',3000), ('감자',2000), ('옥수수',4500),('토란',1300)]
+
+veg = dict(veg) # 딕셔너리로 변환
+
+s= max(dict(veg).values()) # 최고 value 값 추출
+
+for k,v in veg.items(): #veg 딕셔너리 순회하며 value값에 맞는 키값 추출
+    if v == 4500:
+        print(k)
+
+print([k for k, v in veg.items() if v == s]) # 조건표현식으로 추출
+```
