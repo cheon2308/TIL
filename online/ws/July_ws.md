@@ -113,3 +113,27 @@ print(new_string)
 #3
 new_string = ''.join(filter(str.isalnum, string))
 ```
+
+# 3. 끝말잇기
+
+```python
+sen = input()
+
+sen = sen.split()
+
+
+j=1
+for i in sen:
+
+    word = list(i) # 한 단어를 리스트로 만들기
+    if j < len(sen): # sen리스트 길이 안에서만 비교
+        if word[-1] == sen[j][0]: # 첫 단어의 끝 글자와, 다음 글자의 첫 글자를 비교
+            sta = 'pass' #같다면 pass 변수 할당 후 sen 인덱스값 +1
+            j+=1     
+        else:
+            sta = 'fail' # 다르다면 fail 변수 입력 후 탈출
+            break
+    else:
+        break
+print(sta)
+```
