@@ -163,3 +163,51 @@ for k,v in veg.items(): #veg 딕셔너리 순회하며 value값에 맞는 키값
 
 print([k for k, v in veg.items() if v == s]) # 조건표현식으로 추출
 ```
+
+---
+
+# 0720
+
+# 1.  썩은 과일 바꾸기
+
+```python
+fruit = input()
+
+fruit = fruit.split(',')
+new_fruit = []
+for i in fruit:
+    i = i.lower()
+    if 'rotten' in i:
+        i = i.replace('rotten','')
+    new_fruit.append(i)
+print(new_fruit)
+```
+
+# 2.  중간 문자 구하기
+
+```python
+def get_middle_char(a):
+    if len(a) % 2 == 0:
+        return a[len(a)//2-1:len(a)//2+1] # 중간값 직전 인덱스 이상, 중간값 다음값 미만 출력
+    else:
+        return a[len(a) // 2]
+
+print(get_middle_char('coding'))
+```
+
+# 3. Dictionary 내부의 나이 더하기
+
+```python
+dict_list_sum = ([{'name':'kim', 'age':12}, 
+                  {'name':'lee', 'age':4}])
+
+age_val = {}
+age = 0 
+
+for i in dict_list_sum:
+    age += i['age']    
+    
+print(age)
+```
+
+# 
