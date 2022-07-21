@@ -206,8 +206,16 @@ age = 0
 
 for i in dict_list_sum:
     age += i['age']    
-    
+
 print(age)
 ```
 
 # 
+
+
+
+---
+
+# 0720
+
+# 3. 중복 숫자
