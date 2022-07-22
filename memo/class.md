@@ -375,4 +375,16 @@ from package.module import var, function, Class
 > pip install requests
 > ```
 
----
+-- -
+
+# 0722 PJT
+
+# Dictionary
+
+```python
+print(stock['price']) # 해당 키를 받아오다가 키 값 없으면 오류
+
+print(stock.get['price']) # 해당 키를 받아오다가 키 값 없으면 None값 반
+print(stock.get['price', '비상장 주식입니다.']) # get 사용시 default값 설정 해줄 수 있음 !! 
+
+```
