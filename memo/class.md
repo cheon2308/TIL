@@ -372,6 +372,8 @@ from package.module import var, function, Class
 > python -m venv venv #가상환경 이름
 > source - venv/Scripts/activate
 > # 아무것도 없는 상태에서
+> pip list
+> pip freeze > requir
 > pip install requests
 > ```
 
@@ -386,5 +388,4 @@ print(stock['price']) # 해당 키를 받아오다가 키 값 없으면 오류
 
 print(stock.get['price']) # 해당 키를 받아오다가 키 값 없으면 None값 반
 print(stock.get['price', '비상장 주식입니다.']) # get 사용시 default값 설정 해줄 수 있음 !! 
-
 ```
