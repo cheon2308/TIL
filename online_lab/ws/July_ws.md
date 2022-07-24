@@ -210,10 +210,122 @@ for i in dict_list_sum:
 print(age)
 ```
 
-# 
+# 4. 혈액형으로 딕셔너리 구성
+
+```python
+# key : 혈액형 종류, value : 사람수
+# 리스트로 받아서 딕셔너리 구성
+blood_types = [ 'A','A','O', 'B', 'A', 'O', 'AB','O', 'A', 'B', 'O', 'B', 'AB']
+
+blood_A, blood_B, blood_O, blood_AB = (0, 0, 0, 0)
+blood_people = {}
+for i in blood_types:
+    if i == 'AB':
+        blood_AB +=1
+    elif i == 'A':
+        blood_A += 1
+    elif i == 'B':
+        blood_B += 1
+    else: # i == 'O':
+
+        blood_O += 1
+
+
+blood_people = {'A' : blood_A, 'B' :blood_B, 'O':blood_O, 'AB': blood_AB}
+print(blood_people)
+```
+
+# 5. 소금물 농도 구하기
+
+```python
+# 소금물 퍼센트 농도와 소금물의 양 입력
+# Done 입력시 혼합물의 퍼센트 농도와 양 출력
+# 최대 5개의 소금물 입력가능
+# 반올림 2번째 자리까지 표현
+
+
+salt_water = list(map(float, input('소금물의 농도, 양 순서로 입력해주세요:').split()))  
+
+
+salt = []
+concentration = []
+water = []
+for i in range(len(salt_water)):  #입력되는 소금물 리스트의 값을 농도, 양으로 나누고 농도/양 *100을 통하여 소금의 양 구하기
+    if i % 2 == 0:
+        water.append(salt_water[i+1]) #소금물의 양
+        concentration.append(salt_water[i]) #농도
+        salt.append(salt_water[i] * 0.01 * salt_water[i+1]) # 소금의 양
+
+# 합쳐진 소금물의 소금의 양, 소금물의 양 구하기
+total_salt = sum(salt) #총 소금의 양
+total_water = round(sum(water),2) # 총 소금물의 양
+
+total_concentration = round((total_salt/total_water)*100, 2) # 혼합물의 농도 구하기
+
+#print(salt,concentration, total_salt, total_water)
+
+if input() == 'Done':   #Done 입력시 농도와 양 출력
+    print (f'혼합물의 농도 : {total_concentration}%, 혼합물의 양 : {total_water}ml')
+```
 
 ---
 
-# 0720
+# 0721
 
-# 3. 중복 숫자
+# 1. 비밀번호 입력
+
+```python
+# 맞는 비밀번호 입력까지 반복
+# 3번 이상 틀리면 종료
+
+password = input()
+
+cnt=0
+while cnt < 3:
+    j = input()
+    cnt += 1
+    if j == password:
+        print('문이 열립니다.')
+        break
+    if cnt != 3:   
+        print('다시 입력하세요 : ')
+    else:
+        print('문을 열수 없습니다.')
+```
+
+# 2. 반장선거
+
+```python
+students = ['박해피', '이영희', '조민지', '조민지', 
+            '김철수', '이영희', '이영희', '김해킹',
+            '박해피', '김철수', '한케이', '강디티',
+            '조민지', '박해피', '김철수', '이영희',
+            '박해피', '김해킹', '박해피', '한케이','강디티']
+
+# 입력받은 리스트를 딕셔너리로 구성
+# key : 이름, value : 득표수
+
+vote = {}
+
+for i in students:
+    if i in vote:
+        vote[i] += 1
+    else:
+        vote[i] = 1
+
+print(sorted(vote.keys(), key = lambda item : item[1], reverse = True)) #sorted(정렬 데이터, key 파라미터(기준값), reverse 파라미터)
+```
+
+# 3. 중복 숫자 제거
+
+```python
+num = list(map(int, input().split()))
+print(num)
+new_num = []
+for i in range(len(num)):
+    if [num[i]] != num[i+1:i+2]:
+        new_num.append(num[i])
+
+print(new_num)
+
+```
