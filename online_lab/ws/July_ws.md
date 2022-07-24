@@ -327,5 +327,69 @@ for i in range(len(num)):
         new_num.append(num[i])
 
 print(new_num)
-
 ```
+
+
+
+# 4. 아스키 코드 변환
+
+```python
+word1 = input('첫 번째 이름을 입력하세요 : ')
+word2  = input('두 번째 이름을 입력하세요 : ')
+
+def get_strong_word(a,b):
+    sum1 = 0
+    sum2 = 0
+    for i in a:
+        sum1 += ord(i) #a 변환 후 합
+    for j in b:
+        sum2 += ord(j) #b 변환 후 
+    if sum1 > sum2:
+        return a
+    elif sum1 == sum2:
+        return a, b
+    elif sum1 < sum2:
+        return b   
+
+
+#get_strong_word('z', 'a')
+s = get_strong_word(word1, word2) 
+print(s)
+```
+
+# 5. 반의어 출력
+
+```python
+words_dict = {'proper' : '적절한',
+'possible' : '가능한',
+'moral' : '도덕적인',
+'patient' : '참을성 있는',
+'balance' : '균형',
+'perfect' : '완벽한',
+'logical' : '논리적인',
+'legal' : '합법적인',
+'relevant' : '관련 있는',
+'responsible' : '책임감 있는',
+'regular' : '규칙적인'}
+
+words = list(words_dict.keys())
+#print(words)
+# b,m,p일 때 im-
+# l일 때, il-
+# r일 때, ir-
+new_words = [] # 한 문자씩 쪼개기
+
+for i in words:
+    
+    if i[0:1] == 'b' or i[0:1] == 'p' or i[0:1] == 'm': #문자열 슬라이싱을 통해 첫글자 비교
+        i = 'im'+i
+    elif i[0:1] == 'l':
+        i = 'il'+i
+    elif i[0:1] == 'r':
+        i = 'ir'+i
+    new_words.append(i)
+
+print(sorted(new_words))
+```
+
+---
