@@ -379,13 +379,142 @@ from package.module import var, function, Class
 
 -- -
 
-# 0722 PJT
+# 0725
 
-# Dictionary
+# 데이터 구조
+
+## 시퀀스 형
+
+### 1. 문자열
+
+- 모든 문자는 str타입(변경 불가능한 immutable)
 
 ```python
-print(stock['price']) # 해당 키를 받아오다가 키 값 없으면 오류
+  #문자열 조회/탐색
+  s.find(x) # x의 첫 번째 위치 반환, 없으면 -1을 반환
+  s.index(x) #x의 첫 번째 위치를 반환, 없으면 오류 발생
+```
 
-print(stock.get['price']) # 해당 키를 받아오다가 키 값 없으면 None값 반
-print(stock.get['price', '비상장 주식입니다.']) # get 사용시 default값 설정 해줄 수 있음 !! 
+```python
+  #문자열 검증
+  s.isalpha() #알파벳 문자여부, 유니코드상 letter
+  s.isupper() #대문자 여부
+  s.islower() #소문자여부
+  s.istitle() #타이틀 형식여부 (띄어쓰기 기준)
+  isdemical() < isdigit() < isnumerical()  # 숫자 검증
+```
+
+```python
+  #문자열 변경
+  s.replace(old, new[, count]) # 대상 글자 반환, count지정시 대상 개수만 반환
+  s.strip([chars]) # 공백이나 특정 문자 제거 # lstrip, rstrip으로 한쪽만 날릴 수도 잇음
+
+  s.split(sep=None, maxsplit= -1) #공백이나 특정문자 기준 분리
+  # sep이 None이거나 빈값이면 연속된 공백문자를 단일 공백으로 간주
+  # maxsplist이 -1이면 제한없음
+ 'separator'.join([iterable]) #구분자로 iterable을 합침
+  s.capitalize() #가장 첫째글자 대문자로 변경
+  s.title() #문자열 내 띄어쓰기 기준으로 각 단어 첫자 대문자
+  s.upper() #모두 대문자
+  s.lower() #모두 소문자
+  s.swapcase() #대 - 소문자 서로 변경
+```
+
+### 2. 리스트
+
+```python
+#리스트 메서드
+l.append(x) # 마지막 항목에 x추가
+l.insert(i,x) # 리스트 인덱스 i에 x추가, 리스트 길이보다 큰 경우 맨뒤
+l.remove(x) #리스트 가장 왼쪽에 있는 x제거, 존재안하면 ValueError
+l.pop() # 리스트 가장 오른쪽에 있는 항목을 반환 후 제거
+l.pop(i) #리스트 인덱스 i에 있는 값을 반환후 제거,  i지정안할시 마지막값 반환 후 삭제
+l.extend(m) # 순회형 m의 모든 항목들의 리스트 끝에 추가(+=)
+          # cafe.extend('coffee') 로 문자열 추가시 c, o , f , f 와 같이 쪼개져서 드감
+        #리스트 +리스트 해서 하나의 긴 리스트 된다
+
+l.index(x, start, end) #리스트에 있는 항목 중 가장 있는  항목x의 인덱스를 반환
+l.reverse() #리스트 거꾸로 정렬
+l.sort() #원본리스트를 정렬(매개변수 이용가능), None 반환, sorted함수와 비교 - 정렬된 리스트를 반환
+l.count(x) #리스트에서 항목 x가 몇 개 존재하는지 갯수를 반환 
+```
+
+### 3. 튜플
+
+- 여러 개의 값을 순서가 있는 구조로 저장하고 싶을 때 사용
+- 리스트와의 차이점 == 생성 후 , 담고있는 값 변경 불가
+- 항상 소괄호 형태로 사용
+- **변경할 수 없기 때문에 값에 영향 안주는 메서드만 지원**
+- 리스트 메서드 중 항목 변경하는 메서드들 제외하고 대부분 동일
+
+a.**멤버십 연산자**
+
+- 멤버십 연산자 in을 통하여 특정 요소가 속해 있는지 여부 확인
+- not in
+
+b.**시퀀스형 연산자**
+
+- 산술연산자 (+)
+  : 시퀀스간의 concentration
+
+- 반복연산자(*)
+  : 시퀀스를 반복
+
+## 비시퀀스형
+
+### 1. set
+
+- 중복 요소가 없이 존재, 순서에 상관없는 데이터들
+  : 중복되는 요소는 하나만 저장, 인덱스 사용 x
+
+- 담고 있는 요소 삽입 변경, 삭제 가능
+  
+  ```python
+  s.copy() #셋의 얕은 복사본을 반환
+  s.add() #항목 x가 셋s에 없다면 추가
+  s.pop() #셋 s에서 랜덤하게 항목을 반환하고, 해당 항목 제거 set이 비어있을 경우 keyError
+  s.remove(s) #항목 x를 셋 s에서 삭제, 항목 존재하지 않을 경우, KeyError
+  s.discard(x) #항목 x가 셋s에 있는 경우, 항목 x를 셋s에서 삭제
+  s.update(t) #셋 t에 있는 항목중 셋 s에 없는 항목 추가
+  s.clear()
+  s.isdisjoint(t) # 셋s가 셋t의 항목 하나도 없으면 True(서로소)
+  s.issubset(t) # 셋s가 셋 t의 하위 셋인 경우, True반환
+  s.issuperset(t) # 셋s가 셋 t의 상위 셋인 경우, True반환
+  ```
+  
+  ### 2. 딕셔너리
+  
+  ```python
+  d.clear()
+  d.copy() # 얕은 복사본을 반환
+  d.keys()
+  d.values()
+  d.items()
+  d.get(k)
+  d.get(k,v)  #키 k가 딕d에 없을 경우, v반환
+  d.pop(k) # 삭제후 value값 반환
+  d.pop(k,v)
+  d.update([other]) 딕셔너리 d의 값을 매핑하여 업데이트
+  ```
+
+# 얕은 복사와 깊은 복사
+
+### 할당
+
+##### 1. 대입 연산자(=)
+
+- 리스트 복사 확인하기 
+- 대입 연사자를 통한 복사는 해당 객체에 대한 객체 참조를 복사
+- 해당 주소의 일부 값을 변경하는 경우 이를 참조하는 모든 변수에 영향
+
+### 얕은 복사
+
+##### 1. Slice 연산자 활용
+
+- 같은 원소를 가진 리스트지만 연산된 결과를 복사(다른 주소)
+- **얕은 복사의 주의사항**
+  : 복사하는 리스트의 원소가 주소를 참조하는 경우는 변경됨
+
+```python
+b = copy.deepcopy(a) 같이 깊은 복사 이용
 ```
