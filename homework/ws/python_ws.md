@@ -23,7 +23,7 @@ else:
 
 ```python
 num = list(str(input()))
-avv12123
+av
 i=0
 id=''
 for i in range(0 ,len(num)): #주민번호 길이만큼 반복
