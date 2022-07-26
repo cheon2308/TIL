@@ -329,8 +329,6 @@ for i in range(len(num)):
 print(new_num)
 ```
 
-
-
 # 4. 아스키 코드 변환
 
 ```python
@@ -380,7 +378,7 @@ words = list(words_dict.keys())
 new_words = [] # 한 문자씩 쪼개기
 
 for i in words:
-    
+
     if i[0:1] == 'b' or i[0:1] == 'p' or i[0:1] == 'm': #문자열 슬라이싱을 통해 첫글자 비교
         i = 'im'+i
     elif i[0:1] == 'l':
