@@ -20,11 +20,10 @@ print(aver)
 s = input('숫자를 입력해주세요 : ')
 sum = 0
 for i in list(str(s)):
-    
+
     sum += int(i)
 
 print(sum)
-
 ```
 
 --- 
@@ -59,7 +58,7 @@ cnt = 0 # 결과값 들어갈 변수
 for i in orders_list:
     if '아이스' in i: 
         cnt += 1
-    
+
 
 print(cnt) # 아이스 들어간 주문 수 추출
 
@@ -126,16 +125,11 @@ for i in range(len(words)):
 print(f'{cnt}번째 사람이 탈락입니다.')
 ```
 
-
-
 ## 2. 문자열 애너그램
 
 ```python
 
-
 ```
-
-
 
 --- 
 
@@ -149,5 +143,34 @@ def leap_year(year):
         return f'{year}년은  윤년입니다.'
     else:
         return f'{year}년은  윤년이 아닙니다.'
+```
+
+## 2.
+
+--- 
+
+# 0726
+
+## 1. 소금물 농도 구하기
+
+```python
+salt = []  # 소금
+salt_water = []  # 소금물
+i = 0
+
+while i < 5:
+    i += 1
+    s = input(f'{i}.소금물의 농도(%)와 소금물의 양(g)을 입력하십시오: ')
+
+    if s == 'Done':
+        break
+
+    S, L = int(s[: s.find('%')]), int(s[s.find(' ') + 1 : s.find('g')])
+
+    salt.append(S * L / 100)
+    salt_water.append(L)
+
+print('{:.2f}% {}g'.format(sum(salt) / sum(salt_water) * 100, sum(salt_water)))
+
 
 ```
