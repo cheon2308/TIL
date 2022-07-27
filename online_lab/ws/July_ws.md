@@ -391,3 +391,155 @@ print(sorted(new_words))
 ```
 
 ---
+
+# 0725
+
+# 1. 썩은 과일 교체하기
+
+```python
+def fruit(a):
+    a = a.lower()
+    a = a.replace('rotten','')
+    a = a.split(',')
+
+    return a
+
+if __name__ == '__main__':
+    print(fruit('apple,rottenBanana,apple,RoTTenorange,Orange'))
+```
+
+# 2. 모듈 import하여 각 연산 수행하는 함수 실행
+
+```python
+# calc.py
+def add(num1, num2):
+    return num1+num2
+
+def sub(num1, num2):
+    return num1-num2
+
+def mul(num1, num2):
+    return num1 * num2
+
+def div(num1, num2):
+
+    try:
+        num1 / num2
+
+    except ZeroDivisionError:
+        return '0으로는 나눌 수 없습니다.'
+
+    return num1/num2  
+
+#예제 풀기
+import calc 
+
+if __name__ == '__main__':
+    print(calc.add(2, 3)) # 5
+    print(calc.sub(2, 3)) # -1
+    print(calc.mul(2, 3)) # 6
+    print(calc.div(2, 3)) # 0.6666666666666666
+
+    print(calc.div(2, 0)) # 0으로 나눌 수 없습니다.
+```
+
+# 3. 특수문자 지우기
+
+```python
+def string_change(sentence):
+
+
+    result = ''
+    for char in sentence:
+        if char.isalpha() or char == ' ':
+            result += char
+
+
+    return result.capitalize()
+
+if __name__ =='__main__':
+    print(string_change('@#~I NeVEr DrEamEd AbouT SuCCeSs, i woRkEd foR iT.!>!'))
+```
+
+# 4.  중복 안된 숫자만 더하기
+
+```python
+def sum_of_repeat_number(number):
+    result = 0
+
+    for i in number:
+        if number.count(i) == 1:
+
+            result += i
+    return result
+
+
+
+if __name__ =='__main__':
+    print(sum_of_repeat_number([4,4,7,8,10,4]))
+```
+
+# 5. 반의어 출력하기
+
+```python
+words_dict = {'proper' : '적절한',
+'possible' : '가능한',
+'moral' : '도덕적인',
+'patient' : '참을성 있는',
+'balance' : '균형',
+'perfect' : '완벽한',
+'logical' : '논리적인',
+'legal' : '합법적인',
+'relevant' : '관련 있는',
+'responsible' : '책임감 있는',
+'regular' : '규칙적인'}
+
+words = list(words_dict.keys())
+#print(words)
+# b,m,p일 때 im-
+# l일 때, il-
+# r일 때, ir-
+new_words = [] # 한 문자씩 쪼개기
+
+for i in words:
+
+    if i[0:1] == 'b' or i[0:1] == 'p' or i[0:1] == 'm': #문자열 슬라이싱을 통해 첫글자 비교
+        i = 'im'+i
+    elif i[0:1] == 'l':
+        i = 'il'+i
+    elif i[0:1] == 'r':
+        i = 'ir'+i
+    new_words.append(i)
+
+print(sorted(new_words))
+```
+
+---
+
+# 0726
+
+# 1. 주민번호 식별하기
+
+```python
+def de_identify(numbers):
+
+    new_num = ''
+    for i in range(len(numbers)):
+
+        if i > 5:
+            numbers =numbers.replace(numbers[i],'*')
+            new_num +=numbers[i]
+        else:
+            new_num += numbers[i]
+    return new_num
+
+if __name__ == '__main__':
+    print(de_identify('970103-1234567'))
+    print(de_identify('8611232345678'))
+```
+
+# 2. 가장 비싼 작물
+
+```pyton
+
+```
