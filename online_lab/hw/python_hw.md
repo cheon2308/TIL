@@ -265,7 +265,6 @@ def group_anagrams(words):
 
 if __name__ == '__main__':
     print(group_anagrams(["eat", "tea", "tan", "ate", "nat", "bat"]))
-
 ```
 
 --- 
