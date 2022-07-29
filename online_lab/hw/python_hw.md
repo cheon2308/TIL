@@ -303,3 +303,9 @@ dog_three = Doggy('워윅이','포메라니안')
 dog_one.dog_status()
 Doggy.get_status('','')
 ```
+
+# 2. 애너그램
+
+```python
+
+```

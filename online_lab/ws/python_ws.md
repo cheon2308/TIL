@@ -541,5 +541,198 @@ if __name__ == '__main__':
 # 2. 가장 비싼 작물
 
 ```pyton
+veg = [('고구마',3000), ('감자',2000), ('옥수수',4500),('토란',1300)]
+
+veg = dict(veg) # 딕셔너리로 변환
+
+s= max(dict(veg).values()) # 최고 value 값 추출
+
+for k,v in veg.items(): #veg 딕셔너리 순회하며 value값에 맞는 키값 추출
+    if v == 4500:
+        print(k)
+
+print([k for k, v in veg.items() if v == s]) # 조건표현식으로 추출
+```
+
+# 3. 모음 갯수
+
+```python
+def count_vowels(word):
+    #result = word.count('i') + word.count('a') +word.count('e') + word.count('o') + word.count('u')
+    result = 0
+
+    #for char in word:
+    #    if char in 'aeiou':
+    #        result +=1
+
+    for char in 'aeiou':
+        result += word.count(char)
+
+    return result
+
+if __name__ == '__main__':
+    print(count_vowels('apple'))
+    print(count_vowels('banana'))
+```
+
+# 4. 혈액형
+
+```python
+blood_types = [ 'A','A','O', 'B', 'A', 'O', 'AB','O', 'A', 'B', 'O', 'B', 'AB']
+
+blood_A, blood_B, blood_O, blood_AB = (0, 0, 0, 0)
+blood_people = {}
+for i in blood_types:
+    if i == 'AB':
+        blood_AB +=1
+    elif i == 'A':
+        blood_A += 1
+    elif i == 'B':
+        blood_B += 1
+    else: # i == 'O':
+
+        blood_O += 1
+
+
+blood_people = {'A' : blood_A, 'B' :blood_B, 'O':blood_O, 'AB': blood_AB}
+print(blood_people)
+```
+
+# 5. 각 자릿수 더하기(함수)
+
+```python
+#1
+def sumOfDigits(num):
+    digits = map(int, list(str(num)))
+    return sum(digits)
+
+if __name__ == '__main__':
+    print(sumOfDigits(47253))
+    print(sumOfDigits(643))
+
+#2
+def sumOfDigits(num):
+    sum = 0
+    for c in list(str(num)):
+        sum += int(c)
+
+    return sum
+
+if __name__ == '__main__':
+    print(sumOfDigits(47253))
+    print(sumOfDigits(643))
+```
+
+--- 
+
+# 0727
+
+# 1. 국적
+
+```python
+class Nationality:
+    def __init__(self, location):
+        self.location =f'나의 국적은 {location}'
+
+
+
+
+korea_nationality = Nationality('대한민국')
+print(korea_nationality.location) # 나의 국적은 대한민국
+```
+
+# 2. 끝말잇기
+
+```python
+def wordrelay(words):
+    cnt = 1
+    pre_words = []
+    for i in range(len(words)):
+        cnt += 1
+        j = i+1
+        if words[i] in pre_words:
+            break
+        if words[j][0] != words[i][-1]:
+            break
+        pre_words.append(words[i])
+
+    return f'{cnt}번째 참가자가 탈락하였습니다.'
+
+# 끝말잇기 몇 번째 사람 탈락
+# 틀리거나 이전에 등장했던 단어 사용하는 경우 지게 된다.
+# cnt를 이용해 사람 수 체크
+# 반복문 이용하여 마지막 글자와 앞에 글자 비교
+# 이전에 등장했던 단어인지 체크
+
+if __name__ == '__main__':
+    words = ["round","dream","tweet","magnet","tweet","trick","kiwi"]
+    print(wordrelay(words)) # 5번째 참가자가 탈락하였습니다.
+```
+
+# 3. 계산기
+
+```python
+class Calculator:
+    def __init__(self, num1, num2):
+        self.num1 = num1
+        self.num2 = num2
+        pass
+    
+    def add(self):
+        return self.num1+self.num2
+
+    def sub(self):
+        return self.num1-self.num2
+
+    def mul(self):
+        return self.num1 * self.num2
+
+    def div(self):
+
+        try:
+            self.num1 / self.num2
+
+        except ZeroDivisionError:
+            return '0으로는 나눌 수 없습니다.'
+
+        return self.num1/self.num2  
+
+problem1 = Calculator(1,2)
+problem2 = Calculator(2,1)
+problem3 = Calculator(3,4)
+problem4 = Calculator(4,0)
+
+print(problem1.add())
+print(problem2.sub())
+print(problem3.mul())
+print(problem4.div())
+
+```
+
+# 4. 주차요금 계싼하기
+
+```python
+import math
+
+def fee(time, distance):
+    lent_fee = 1200 * time /10
+    insuarance_fee = 525 * math.floor(time/30)
+    ride_fee = 0
+    
+    if distance > 100:
+        ride_fee = 170 * 100 + 85*(distance-100)
+    else:
+        ride_fee = 170 *distance
+        
+    total = lent_fee + insuarance_fee + ride_fee
+    return total
+
+if __name__ == '__main__':
+    print(fee(600,50))
+```
+
+# 5. 페어프로그래밍
+
+```python
 
 ```
