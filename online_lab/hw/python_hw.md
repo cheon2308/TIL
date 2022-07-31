@@ -304,7 +304,88 @@ dog_one.dog_status()
 Doggy.get_status('','')
 ```
 
-# 2. 애너그램
+# 2. Collatz
+
+```python
+def solution(num):
+    answer = 0
+    while num > 1:
+        if num%2==0:
+            num /= 2
+        elif num%2 == 1:
+            num = (num*3)+1
+        answer += 1
+    if answer >= 500:
+        answer = -1
+    return answer
+
+if __name__ == '__main__':
+    print(solution(6))
+```
+
+---
+
+# 0728
+
+# 1. Point클래스
+
+```python
+class Point:
+    def __init__(self, x, y):
+        self.x = int(x)
+        self.y = int(y)
+
+class Rectangle:
+
+    def __init__(self, p1, p2):
+        #self.x1 = p1.x
+        #self.y1 = p1.y
+        #self.x2 = p2.x
+        #self.y2 = p2.y
+        self.p1 = p1
+        self.p2 = p2
+        self.width = abs(self.p1.x - self.p2.x)
+        self.height = abs(self.p1.y - self.p2.y)
+
+    def get_area(self):
+        #area = (self.x2-self.x1) * (self.y1-self.y2)
+        # 가로 *세로
+        #width = abs(self.p1.x - self.p2.x)
+        #height = abs(self.p1.y - self.p2.y)
+
+        return self.width*self.height
+
+    def get_perimeter(self):
+        #perimeter = (self.x2-self.x1) * 2 + (self.y1-self.y2) *2
+        #width = abs(self.p1.x - self.p2.x)
+        #height = abs(self.p1.y - self.p2.y)
+
+        return (self.width +self.height) *2
+
+    def is_square(self):
+        #bool = (self.x2 == self.y1 and self.x1 == self.y2)
+        #width = abs(self.p1.x - self.p2.x)
+        #height = abs(self.p1.y - self.p2.y)
+
+        return self.width == self.height
+
+
+p1 = Point(1,3)
+p2 = Point(3,1)
+r1 = Rectangle(p1,p2)
+print(r1.get_area())
+print(r1.get_perimeter())
+print(r1.is_square())
+
+p3 = Point(3,7)
+p4 = Point(6,4)
+r2 = Rectangle(p3,p4)
+print(r2.get_area())
+print(r2.get_perimeter())
+print(r2.is_square())
+```
+
+# 2. 스택 구현하기
 
 ```python
 

@@ -677,7 +677,7 @@ class Calculator:
         self.num1 = num1
         self.num2 = num2
         pass
-    
+
     def add(self):
         return self.num1+self.num2
 
@@ -706,7 +706,6 @@ print(problem1.add())
 print(problem2.sub())
 print(problem3.mul())
 print(problem4.div())
-
 ```
 
 # 4. 주차요금 계싼하기
@@ -718,12 +717,12 @@ def fee(time, distance):
     lent_fee = 1200 * time /10
     insuarance_fee = 525 * math.floor(time/30)
     ride_fee = 0
-    
+
     if distance > 100:
         ride_fee = 170 * 100 + 85*(distance-100)
     else:
         ride_fee = 170 *distance
-        
+
     total = lent_fee + insuarance_fee + ride_fee
     return total
 
@@ -735,4 +734,157 @@ if __name__ == '__main__':
 
 ```python
 
+```
+
+--- 
+
+# 0728
+
+# 1. 깍두기 참가번호 입력하기
+
+```python
+participants =  [3, 7, 100, 21, 13, 6, 5, 7, 5, 6, 3, 13, 21]
+
+for i in participants:
+    if participants.count(i) == 1:
+        print(i)
+```
+
+# 2. 사람 클래스 만들기
+
+```python
+from datetime import date
+
+class Person:
+    # 생성자
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    @classmethod
+    def details(cls, name, year):
+        return cls(name, date.today().year - year)
+
+    def check_age(self):
+        return self.age > 19
+```
+
+# 3. 교통수단 클래스 만들기
+
+```python
+class PublicTransport:
+    count = 0
+    def __init__(self, name, fare):
+        self.name = name
+        self.fare = fare
+
+
+    def get_in(self, n):
+        self.n = n
+        self.count += n
+        return self.count
+
+    def get_off(self, n):
+        self.n = n
+        self.count -= n
+        return self.count
+
+    def profit(self):
+        return self.count, self.count*self.fare
+
+subway = PublicTransport('SUB', 300)
+subway.get_in(7)
+
+print(subway.profit())
+```
+
+# 4. 교통수단 버스 오버라이딩
+
+```python
+class PublicTransport:
+    count = 0
+    def __init__(self, name, fare):
+        self.name = name
+        self.fare = fare
+
+
+    def get_in(self, n):
+        self.n = n
+        self.count += n
+        return self.count
+
+    def get_off(self, n):
+        self.n = n
+        self.count -= n
+        return self.count
+
+    def profit(self):
+        return self.count, self.count*self.fare
+
+
+class Bus(PublicTransport):
+
+    def get_in(self, n, restric_num):
+        self.n = n
+        self.restric_num = restric_num
+
+        self.count += n
+        if self.n > self.restric_num:
+
+            return '더 이상 탑승할 수 없습니다.'
+        return self.count
+
+bus1 = Bus('busss', 300)
+bus1.get_in(20,15)
+print(bus1.get_in(20,15))
+```
+
+# 5. 하노이의 탑
+
+```python
+MOVE_MESSAGE = "{}번 원반을 {}에서 {}로 이동"
+
+def move(N, start, to):
+    print(MOVE_MESSAGE.format(N, start, to))
+
+
+def hanoi(n, start, to, via):
+    """
+    하노이의 탑 규칙에 따라 원반을 옮기고,
+    옮길 때마다 원반의 시작 위치와 이동한 위치를 출력합니다.
+    마지막으로 총 이동 횟수를 반환합니다.
+    :params
+        n: 총 원반 개수
+        start: 시작 기둥
+        to: 도착 기둥
+        via: 보조 기둥:
+    :return count:
+    """
+    # 원반이 1개일 때 시작 기둥에서 도착 기둥까지 한 번에 이동
+    if n <= 1:
+        move(1, start, to)
+        return 1
+
+    count = 0
+    # 원반 n-1개를 시작 기둥에서 보조 기둥으로 이동
+    count += hanoi(n - 1, start, via, to)
+
+    # 가장 큰 원반을 시작 기둥에서 도착 기둥으로 이동
+    count += 1
+    move(n, start, to)
+
+    # 원반 n-1개를 보조 기둥에서 도착 기둥으로 이동
+    count += hanoi(n - 1, via, to, start)
+
+    return count
+
+
+if __name__ == '__main__':
+    n = 3
+    start = 1
+    to = 3
+    via = 2
+
+    total_count = hanoi(n, start, to, via)
+    print('총 이동 횟수:', total_count)
 ```
