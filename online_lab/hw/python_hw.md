@@ -388,5 +388,52 @@ print(r2.is_square())
 # 2. 스택 구현하기
 
 ```python
+class Stack():
+    def __init__(self):
+        self.stack = []
+        
+    def push(self, data):
+        self.stack.append(data)
+        
+    def pop(self):
+        pop_object = None
+        if self.empty():
+            return None
+        else:
+            pop_object = self.stack.pop()
+            
+        return pop_object
+            
+    def top(self):
+        top_object = None
+        if self.empty():
+            return None
+        else:
+            top_object = self.stack[-1]
+            
+        return top_object
+            
+            
+    def empty(self):
+        empty = False
+        if len(self.stack) == 0:
+            empty = True
+        return empty
+    
+    def __repr__(self):
+        return self.stack
+
+stk = Stack()        # stack 객체 생성
+        # stack object 생성 확인
+
+print(stk.empty()) # 처음에는 아무것도 들어있지 않으므로 True 출력
+stk.push(1)          # stk 에 1 넣음 : [1]
+stk.push(2)          # stk 에 2 넣음 : [1,2]
+
+print(stk.pop())     # stk 에 2가 꺼내지면서 출력 : 2 / [1]
+print(stk.__repr__())
+print(stk.empty()) # 비어있지 않으므로 False 출력
+print(stk.pop())     # stk 에 1가 꺼내지면서 출력 : 1 / []
+print(stk.empty()) # 객체에 아무것도 들어있지 않으므로 True 출력
 
 ```

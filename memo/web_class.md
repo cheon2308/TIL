@@ -138,15 +138,350 @@
 
 > 그룹 요소
 
- <img title="" src="web_class_assets/5a5a0d2f67fdd9a7a2a6fcc88e8a615ffa01eccc.png" alt="화면 캡처 2022-08-01 113418.png" width="817">
+<img title="" src="web_class_assets/5a5a0d2f67fdd9a7a2a6fcc88e8a615ffa01eccc.png" alt="화면 캡처 2022-08-01 113418.png" width="817">
 
 ![화면 캡처 2022-08-01 123731.png](web_class_assets/0fc6928212969ed649aadc5c1636fcec230a47d8.png)
 
-> form
-- 정보(데이터)를 서버에 제출하기 위해 사용하는 태크
+> 중요!! **form** 
+
+- 사용자로부터 정보를 입력받기 위하여 사용 (로그인 창), (Django에서 깊게 배움)
+- 즉, 정보(데이터)를 서버에 제출하기 위해 사용하는 태그
 - 속성
   1. action : form을 처리할 서버의 URL
   2. method : form을 제출할 때 사용할 HTTP 메서드(GET 혹은 POST)
   3. enctype : method가 post인 경우 데이터의 유형
-    - application / x-www-form=urlencoded : 기본값
-    - multipart/form-data : 파일 전송시 (input type이 file인 경우)
+     - application / x-www-form=urlencoded : 기본값
+     - multipart/form-data : 파일 전송시 (input type이 file인 경우)
+
+> input
+
+- form과 비슷하지만 form의 내부에서 사용
+- 다양한 타입을 가지는 입력 데이터 유형과 위젯이 제공
+- 속성
+  1. name : form control에 적용되는 이름 (이름/값 페어로 전송됨)
+  2. value : form control에 적용되는 값 (이름/값 페어로 전송됨)
+  3. required, readonly, autofocus 등등... 
+
+> input label
+
+- label을 클릭하여 input 자체의 초점을 맞추거나 활성화 시킬 수 있음
+  1. 사용자는 선택할 수 있는 영역이 늘어나 웹/모바일(터치) 환경에서 편하게 사용할 수 있음
+  2. label과 input 입력의 관계가 시각적 뿐만 아니라 화면리더기에서도 label을 읽어 쉽게 내용 확인 가능
+- `<input>`에는 id 속성을, `<label>`에는 for 속성 활용하여 상호연관
+- label -> input 태그의 설명 in form
+
+##### input유형 -일반
+
+1. text
+2. password - *로 표시
+3. email - email형식 아니면 제출 불가
+4. number - min, max,step 속성 활용하여 숫자 범위 설정 가능
+5. file
+
+##### input유형 - 항목 중 선택
+
+1. checkbox - 다중선택
+2. radio - 단일선택 
+
+##### input유형 - 기타
+
+1. color - colorpicker
+2. date - datepicker
+3. hidden - 사용자에게 보이지 않는 input
+
+> input 요소의 동작은 type에 따라 달라지므로 숙지할 것 !
+
+### 마크업 해보기
+
+1. header
+   
+   ![화면 캡처 2022-08-01 141636.png](web_class_assets/9fb6c20f3fe014a87f1c4722ca0b39075bc6d6d9.png)
+
+2. section
+   
+   ![화면 캡처 2022-08-01 141644.png](web_class_assets/f48c7b5f840f94428ebd49ad7b5d7afc8e780c6b.png)
+   
+   ![화면 캡처 2022-08-01 141652.png](web_class_assets/f77db69dd65dd7fd71057b672940b87680f7f6f7.png)
+   
+   ![화면 캡처 2022-08-01 141819.png](web_class_assets/0f1e44e295f91dbf5a9670cd3704059ce1e15b44.png)
+   
+   ![화면 캡처 2022-08-01 141842.png](web_class_assets/a94e405a1b5bb511b86e520e1ee807895a3953cb.png)
+
+3. footer
+   
+   ![화면 캡처 2022-08-01 141852.png](web_class_assets/ab15a4438953b789923084cc12473dc534bed8e3.png)
+
+---
+
+# CSS (Cascading Style Sheets)
+
+- 상속이 되어 하나하나 할당하기 쉽지 않음
+
+- 스타일을 지정하기 위한 언어, **선택하고, 스타일을 지정한다.**
+  
+  ![화면 캡처 2022-08-01 142502.png](web_class_assets/838646e147484b4c5471432e10c081876332c3a4.png)
+
+#### 정의방법
+
+- 인라인
+  : 해당 태그에 직접 style 활용
+  : 중복도 있을 것이고, 찾기 어려워서 실수가 잦아짐
+  
+  ![화면 캡처 2022-08-01 143056.png](web_class_assets/6945221c6253339520846b43fe9dc508ca2ff8e6.png)
+
+- 내부 참조 -`<style>`
+  : 코드가 너무 길어짐
+  
+  ![화면 캡처 2022-08-01 143046.png](web_class_assets/4181ec285f585e7d7c70c2e5c648b9a64033ea3a.png)
+
+- 외부 참조 - 분리된 CSS 파일
+  : 가장 많이 사용  
+  ![화면 캡처 2022-08-01 143106.png](web_class_assets/6373ff5ef1c901be97feb5e0cf78dc8697664f54.png)
+
+#### CSS with 개발자 도구
+
+1. styles : 해당 요소에 선언된 모든 CSS
+2. computed : 해당 요소에 최종 계산된 CSS
+
+##### 선택자 with 개발자 도구
+
+1. 기본 선택자
+   
+   - 전체 선택자, 요소 선택자
+   - 클래스 선택자, 아이디 선택자, 속성 선택자
+
+2. 결합자(combinators)
+- 자손 결합자, 자식 결합자
+
+- 일반 형제 결합자, 인접 형제 결합자
+3. 의사 클래스/요소(Pseudo Class)
+- 링크, 동적 의사 클래스
+
+- 구조적 의사 클래스, 기타 의사 클래스, 의사 엘리먼트, 속성 선택자
+  
+  ![화면 캡처 2022-08-01 150247.png](web_class_assets/2123c22e1465808fd550e8bac3db700b728c03b2.png)
+
+> 선택자 정리(아래로 내려갈수록 좁아짐)
+
+- 요소 선택자
+  
+  - HTML 태그를 직접 선택
+
+- 클래스 선택자
+  
+  - 마침표(.)문자로 시작하며, 해당 클래스가 적용된 항목 선택
+
+- 아이디 선택자
+  
+  - #문자로 시작하며, 해당 아이디가 적용된 항목 선택
+  - 일반적 하나 문서 1번
+  - 여러 번 상관없지만, 단일 ID를 사용하는 것 권장
+
+#### CSS적용 우선순위(CASCADING ORDER)
+
+- **범위가 좁을수록 강하다**
+1. 중요도 -사용시 주의
+   : !important
+2. 우선순위(Specificity)
+   : 인라인 > id > class, 속성, pseudo-class > 요소, pseudo-element
+3. CSS 파일 로딩 순서
+   : 밑에 있는 애가 이긴다.
+
+## CSS 상속
+
+- CSS는 상속을 통해 부모 요소의 속성을 자식에게 상속
+  - 속성(프로퍼티) 중에는 상속이 되는 것과 되지 않는 것들이 있음.
+  - 상속 되는 것 : Text 관련 요소 등
+  - 상속 되지 않는 것 : Box model 관련 요소, 레이아웃 등
+
+#### CSS 기본 스타일
+
+- 크기 
+  
+  - px(픽셀)
+    : 모니터 해상도의 한 화소인 '픽셀' 기준
+    : 픽셀의 크기는 변하지 않기 때문에 고정적인 단위
+  
+  - %
+    : 백분율 단위
+    : 가변적인 레이아웃에서 자주 사용
+  
+  - em 
+    : (바로 위, 부모 요소에 대한) 상속의 영향을 받음
+    : 배수 단위, 요소에 지정된 사이즈에 상대적인 사이즈를 가짐
+  
+  - rem (기본 16px)
+    : (바로 위, 부모 요소에 대한) 상속의 영향을 받지 않음
+    : 최상위 요소(html)의 사이즈를 기준으로 배수 단위를 가짐
+
+- 크기 단위(view port)
+  
+  - 방문한 유저에게 바로 보이게 되는 웹 컨텐츠의 영역
+  - 디바이스의 viewport를 기준으로 상대적인 사이즈가 결정
+  - vw, vh, vmin, vmax
+    : px는 브라우저의 크기 변경해도 그대로
+    : vw는 브라우저의 크기에 따라 변함
+
+- 색상
+  
+  - 색상 키워드(background-color: red;)
+    - 대소문자 구분 x
+  - RGB 색상(background-color: rgb(0, 255, 0);)
+    - 16진수 표기법 혹은 함수형 표기법을 사용해서 특정 색을 표현하는 방식
+    - '#' + 16진수 표기법
+    - rgb() 함수형 표기법
+  - HSL 색상(background-color: hsl(0, 100%, 50%);)
+    - 색상 채도, 명도를 통해 특정 색을 표현하는 방식
+  - a는 alpha(투명도)
+
+- 텍스트 
+  
+  - 서체(font-family), 서체 스타일(font-style, font-weight 등)
+    - 자간(letter-spacing), 단어 간격(word-spacing), 행간(line-height) 등
+  - 컬러(color), 배경(background-image, background-color)
+  - 기타 HTML 태그별 스타일링
+    - 목록, 표
+
+## CSS Selectors
+
+#### 결합자 (Combinators)
+
+- 자손 결합자 (공백)
+  - selectorA 하위의 모든 selectorB 요소
+- 자식 결합자 (>)
+  - selectorA 바로 아래의 selectorB 요소
+- 일반 형제 결합자(~)
+  - selectorA의 형제 요소 중 뒤에 위치하는 selectorB 요소를 모두 선택
+- 인접 형제 결합자(+)
+  - selectorA의 형제 요소 중 바로 뒤에 위치하는 selectorB 요소를 선택
+
+## Box model
+
+- 원칙
+  
+  - 모든 요소는 네모이고, 위에서 아래로, 왼쪽에서 오른쪽으로 쌓인다.
+  - display에 따라 크기와 배치가 달라진다
+
+- 하나의 박스는 네 부분(영역)으로 이루어짐
+  
+  1. margin
+     
+     ```css
+     .margin{
+     margin-top: 10px;
+     margin-right: 20px;
+     margin-bottom: 30px;
+     margin-left: 40px;
+     } /* 상하좌우
+     ```
+  
+  2. border
+     
+     ```css
+     .border{
+     border-width: 2px;
+     border-style: dashed;
+     border-color: black;
+     ```
+
+}/* 상하좌우
+
+```
+  3. padding
+```css
+.margin-padding{
+  margin: 10px;
+  padding: 30px;
+} /* 상하좌우
+```
+
+4. content
+   
+   ![화면 캡처 2022-08-01 160107.png](web_class_assets/c1b767441b4b5e789358525eb862fe38cba3ccb3.png)
+   
+   ![화면 캡처 2022-08-01 160612.png](web_class_assets/344916976010a58ad55e80d9413f684d59632ba3.png)
+   
+   ![화면 캡처 2022-08-01 160635.png](web_class_assets/54f7c8ca8f305541c8ed9e3d3f2bd903afe5f6e8.png)
+
+#### BOX-SIZING
+
+- 기본적으로 모든 요소의 box-sizing은 content-box
+  - Padding을 제외한 순수 contents 영역만을 box로 지정
+- 다만, 우리가 일반적으로 영역 볼 때는 border까지 너비를 100px 보는 것을 원함
+  - 그 경우 box-sizing을 border-box로 설정
+
+### Display
+
+- 대표적 사용 display
+1. display: block
+   
+   - 줄바꿈이 발생
+   - 화면크기 전체의 가로 폭을 차지한다.
+   - 블록 레벨 요소 안에 인라인 레벨 요소 들어갈 수 있음
+   - 기본 너비는 가질 수 있는 너비의 100%
+
+2. display: inline
+   
+   - 줄 바꿈이 일어나지 않는 행의 일부 요소
+   - content 너비만큼 가로 폭을 차지한다.
+   - width, height, margin-top, margin-bottom을 지정할 수 없다.
+   - 상하 여백은 line-height로 지정한다
+   - inline의 기본 너비는 컨텐츠 영역만큼
+
+> 블록 레벨 요소와 인라인 레벨 요소
+
+- 블록 레벨 : div/ ul, ol, li/ p/ hr/ form 등
+- 인라인 레벨 : span/ a/ img/ input, label/ b, em, i, strong 등
+
+##### 속성에 따른 수평 정렬
+
+![화면 캡처 2022-08-01 161516.png](web_class_assets/2305615a821590e206a8577f4e3b883f419b74d1.png)
+
+3. display: inline-block
+   
+   - block과 inline 레벨 요소의 특징을 모두 가짐
+   - inline처럼 한 줄에 표시할 수 있고, block처럼 width, height, margin 속성을 모두 지정할 수 있음
+
+4. display: none
+   
+   - 해당 요소를 화면에 표시하지 않고, 공간조차 부여되지 않음
+
+5. visibility: hidden
+   
+   - 공간은 차지하나 화면에 표시만 하지 않는다.
+
+### CSS 포지션
+
+![화면 캡처 2022-08-01 161932.png](web_class_assets/9832439c4cfaa1f8b52a2f1e7c46f2faf829af82.png)
+
+![화면 캡처 2022-08-01 161944.png](web_class_assets/51529f1e50ff8a9575e302593b21b7f0b426b02b.png)
+
+![화면 캡처 2022-08-01 161952.png](web_class_assets/d8f7ffd2c5c370048023651ef5915a1c325ed5b5.png)
+
+1. static
+
+![화면 캡처 2022-08-01 162121.png](web_class_assets/3314822f845258030764ca84d9928017617be893.png)
+
+2. relative
+
+![화면 캡처 2022-08-01 162128.png](web_class_assets/4d1bdf44896b88b69cac6f6cf711334e4410a54f.png)
+
+3. absolute   
+   ![화면 캡처 2022-08-01 162139.png](web_class_assets/f6c13c675fa27d064f362b9cb200ec6cf26464ed.png)
+4. fixed   
+   ![화면 캡처 2022-08-01 162154.png](web_class_assets/e8cf218eb40bdd5af51aba1bc1d2d0951ff7df31.png)
+
+**absolute vs relative**
+
+![화면 캡처 2022-08-01 162356.png](web_class_assets/c0242beeb7259948ee0d9cc2e7a21f2071bee1c2.png)
+
+> absolute : 부모를 기준 가운데 위치
+> fixed : 브라우저를 기준으로 우측 하단에 위치
+
+#### position sticky
+
+- 스크롤에 따라 static -> fixed로 변경
+
+##### 원칙 정리
+
+![화면 캡처 2022-08-01 162641.png](web_class_assets/6384e34c9cceb68799668f2c0919f0fc6e07379c.png)
