@@ -3,7 +3,7 @@
 # 1. 문자출력
 
 ```python
-print("c:\python_project\\test")1232
+print("c:\python_project\\test")
 ```
 
 # 2. 총 페이지 수 구하기
@@ -23,7 +23,7 @@ else:
 
 ```python
 num = list(str(input()))
-3
+
 i=0
 id=''
 for i in range(0 ,len(num)): #주민번호 길이만큼 반복
