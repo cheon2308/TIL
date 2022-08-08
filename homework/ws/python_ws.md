@@ -12,7 +12,7 @@ print("c:\python_project\\test")1232
 # text, page_1 = list(map(int, input().split())) # 총 게시글 수 , 한 페이지에 들어갈 게시글 수
 
 page_made = text / page_1 #생성되는 페이지 수 
-12
+
 if text % page_1 == 0:
     print (int(page_made))
 else:
