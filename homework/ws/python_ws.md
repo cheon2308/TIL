@@ -15,7 +15,7 @@ page_made = text / page_1 #생성되는 페이지 수
 12
 if text % page_1 == 0:
     print (int(page_made))
-else:223323
+else:
     print (int(page_made +1))
 ```
 
