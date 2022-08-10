@@ -23,7 +23,7 @@ else:223323
 
 ```python
 num = list(str(input()))
-
+3
 i=0
 id=''
 for i in range(0 ,len(num)): #주민번호 길이만큼 반복
