@@ -391,35 +391,35 @@ print(r2.is_square())
 class Stack():
     def __init__(self):
         self.stack = []
-        
+
     def push(self, data):
         self.stack.append(data)
-        
+
     def pop(self):
         pop_object = None
         if self.empty():
             return None
         else:
             pop_object = self.stack.pop()
-            
+
         return pop_object
-            
+
     def top(self):
         top_object = None
         if self.empty():
             return None
         else:
             top_object = self.stack[-1]
-            
+
         return top_object
-            
-            
+
+
     def empty(self):
         empty = False
         if len(self.stack) == 0:
             empty = True
         return empty
-    
+
     def __repr__(self):
         return self.stack
 
@@ -435,5 +435,4 @@ print(stk.__repr__())
 print(stk.empty()) # 비어있지 않으므로 False 출력
 print(stk.pop())     # stk 에 1가 꺼내지면서 출력 : 1 / []
 print(stk.empty()) # 객체에 아무것도 들어있지 않으므로 True 출력
-
 ```
