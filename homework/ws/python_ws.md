@@ -3,7 +3,7 @@
 # 1. 문자출력
 
 ```python
-print("c:\python_project\\test")1
+print("c:\python_project\\test")12
 ```
 
 # 2. 총 페이지 수 구하기
