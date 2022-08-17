@@ -752,7 +752,7 @@ margin: auto;
 
 - containter, rows, column으로 컨텐츠를 배치하고 정렬
 
-- **12개의 column, 6개의 grid breakpoints**
+- **12개의 column, 6개의 grid breakpoints**   1
   
   ![화면 캡처 2022-08-03 173042.png](web_class_assets/3e7df16e8987f1beadee81f9a3a6bc57116bc85b.png)
 
