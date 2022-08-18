@@ -23,7 +23,11 @@ else:
 
 ```python
 num = list(str(input()))
+<<<<<<< HEAD
 
+=======
+av234
+>>>>>>> f25a4bcdf73521fb42f21e6f2974a21f2feca57c
 i=0
 id=''
 for i in range(0 ,len(num)): #주민번호 길이만큼 반복
