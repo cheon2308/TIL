@@ -1,6 +1,3 @@
-[백준 1541_잃어버린 괄호](https://www.acmicpc.net/problem/1541)
-
-```python
 import sys
 sys.stdin = open('input.txt')
 # 최소합을 구해주기 위해선 -뒤에 다음 -가 나오기 전까지 괄호를 쳐주면 된다.
@@ -17,38 +14,25 @@ def infix_to_postfix(expression):
         if expression[e] not in '+-':
             cal.append(expression[e])
 
-
+        # -의 우선순위를 높게 쳐준다.
         elif expression[e] == '-':
-            # 스택 top의 연산자의 우선순위가 e의 우선순위보다 작을 때까지 -> '('나오기 전까지
+            # 같은 -가 나오기전까지
             # stack pop하고 cal에 더한다.
-            while stack and stack[-1] != '(':
+            while stack and stack[-1] == '+':
                 cal.append(stack.pop())
             # 이제 없다면 stack에 e push
             stack.append(expression[e])
-            if cnt == 0:
-                stack.append('(')
-                cnt +=1
-            elif cnt == 1:
-                stack.append(')')
-                cnt = 0
+        # 더하기는 무조건 더해준다.
         elif expression[e] == '+':
-            while stack and stack[-1] != '(':
+            while stack and stack[-1] != '-':
                 cal.append(stack.pop())
             stack.append(expression[e])
-        # e가 닫는 괄호라면 stack에서 여는 괄호가 나올때까지 pop연산을 수행하고 더한다
-        elif e == ')':
-            while stack and stack[-1] != '(':
-                cal.append(stack.pop())
-            stack.pop() # 여는 괄호 버리기
         # 연산이 끝났는데 괄호가 하나밖에 없다면
-        if e == len(expression)-1 and cnt ==1:
-            while stack and stack[-1] != '(':
-                cal.append(stack.pop())
-            stack.pop()
 
     # stack에 남아있는 연산자 cal에 더해주면 후위 표기식 완성
     while stack:
         cal.append(stack.pop())
+    print(cal)
     return cal
 
 
@@ -66,7 +50,7 @@ def cal_postfix(expression):
             if e == '+':
                 stack.append(num2 + num1)
             elif e == '-':
-                stack.append(num2 - num1)
+                stack.append(num1 - num2)
 
     return stack.pop()  # 최종 값 반환
 
@@ -93,28 +77,3 @@ for idx in range(1, T+1):
     result = cal_postfix(postfix)
     print(result)
     # print(f'#{idx} {result}')
-```
-
-- 수가 커서 일반 반복문 사용시 시간초과
-
-```python
-# 손익분기점
-
-# A 고정비용, B 가변비용
-# C 노트북 비용
-import sys
-A,B,C = map(int, sys.stdin.readline().split())
-
-# 판매대수
-sell  = 0
-
-# A는 고정이므로 B와 C의 차이가 A를 넘어가는 순간 이익
-# 즉 나눠준 몫+1 이 판매 대수
-# 손익분기점 존재하지 않으면 -1
-if C-B <= 0:
-    print(-1)
-else:
-    print(A//(C-B)+1)
-```
-
-- 규칙을 찾아주는게 훨씬 빨리 풀 수 있는 방법!!
