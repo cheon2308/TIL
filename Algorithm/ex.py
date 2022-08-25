@@ -8,23 +8,27 @@
 N = int(input())
 # 기둥 왼쪽면 L, 높이 H
 pillar = []
+length = 0
 for i in range(N):
     a, b = map(int, input().split())
     pillar.append((a, b))
+    if a > length:
+        length = a
 # 기둥 왼쪽면 기준 정렬
 pillar.sort()
+
 #print(pillar)
 sum = 0
 start = 0
-while start < len(pillar):
-    for j in range(start+1, len(pillar)):
+while start < length :
+    for j in range(start+1, length):
         # 오른쪽 기둥 높이가 왼쪽보다 낮다면 지나간다.
         if pillar[j][1] < pillar[j-1][1]:
             continue
         # 그렇지 않다면 창고넓이 계산 후 시작 지점 바꿔준다.
         else:
             sum += (pillar[j][0] - pillar[j-1][0]) * pillar[j-1][1]
-            start = j
+            start = pillar[j][0]
             break
 
 print(sum)
