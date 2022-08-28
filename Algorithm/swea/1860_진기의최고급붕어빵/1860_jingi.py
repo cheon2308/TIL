@@ -2,23 +2,25 @@
 # N명, 0초 시작, M초에 K개
 import sys
 from collections import deque
+import time
 sys.stdin = open('input.txt')
 
 
 
-
+start = time.time()
 T = int(input())
 for tc in range(1, T+1):
     N, M, K = map(int, input().split())
-    arrive = list(map(int, input().split()))
+
+    arrive1 = list(map(int, input().split()))
 
     # 기다리는 시간없이 붕어빵 제공가능 하면 possible, 아니라면 impossible
     result = 0
     # 시간 카운트
     second = 1
     # 붕어빵 주면서 q에서 빼준다.
-    arrive.sort()
-
+    arrive1.sort()
+    arrive = deque(arrive1)
 
     # 첫사람이 기다리면 바로 종료
     if arrive[0] < M:
@@ -40,8 +42,10 @@ for tc in range(1, T+1):
                     result = 1
                     print(f'#{tc} Impossible')
                     break
-                arrive.pop(0)
+                arrive.popleft()
             second +=1
         else:
             if result == 0:
                 print(f'#{tc} Possible')
+
+print("time :", time.time() - start)
