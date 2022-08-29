@@ -1,43 +1,46 @@
-# 0은 빈칸
-# 1~100은 각기 다른 인형
-# 크레인은 멈춘 위치에서 가장 위에 있는 인형을 옮긴다.
-# 같은 모양 인형이 쌓인다면 펑!
-# 터진 인형의 개수 반환
 import sys
 sys.stdin = open('input.txt')
 
+# 스프레이 한 번에 최다 킬
+# 노즐은 +형태라 + 또는 x로만 분사
+# M의 세기에 따라 M칸 파리
+# N의 크기, 세기는 칸을 벗어나도 상관없다.
 
-def solution(board, moves):
-    answer = 0
-    # 결과 담아줄 리스트
-    result = []
+T = int(input())
+for tc in range(1, T+1):
+    N, M = map(int, input().split())
+    # 파리 리스트 받아주고
+    fly = [list(map(int, input().split())) for _ in range(N)]
+    # 최다킬
+    max_kill =0
+    # 전체 리스트 돌며
+    for i in range(len(fly)):
+        for j in range(len(fly)):
+            # 한번 뿌렸을 때의 킬 기록
+            kill = 0
+            # 중심부제외 이므로 M의 세기 +1해준다.
+            for k in range(i-M, i+M+1):
+                for l in range(j-M, j+M+1):
+                    # 범위 초과라면 그냥패스
 
-    for i in moves:
-        for j in range(len(board)):
+                    if k<0 or k>=N:
+                        break
+                    elif l < 0 or l >= N:
+                        continue
+                    # 벗어나지 않는다면 +모양으로 더해준다.
+                    #elif 0<=k<N and 0<=l<N:
+                    else:
+                        # print(type(k), type(i), k, i)
+                        # 가로 더해주기
+                        if i == k:
+                            kill += fly[i][l]
 
-            # 2차원배열이라 아래로 쌓이지만 인형뽑기는 1열이 첫줄이다.
-            # (열 고정, 행 움직임)으로 구해준다.
-            # 또한 인형뽑기가 1부터 시작하므로 -1을 해주어야 인덱스번호와 동일하다.
-            if board[j][i-1] != 0:
+                        # 세로 더해주기
+                        elif j != l:
+                            #print(k, i)
+                            kill += fly[k][j]
 
-                # 인형이 들어있고 바구니 제일 위에 똑같은 인형이 들어있다면
-                # 빼주고 +2
-                if len(result) > 0 and result[-1] == board[j][i-1]:
-                    result.pop()
-                    answer += 2
-                # 아니라면 담아준다.
-                else:
-                    result.append(board[j][i-1])
-                # 인형뺀거 기록
-                board[j][i - 1] = 0
-                break
+            if kill>max_kill:
+                max_kill = kill
 
-
-
-    return answer
-
-
-board = [list(map(int, input().split())) for _ in range(5)]
-moves = list(map(int, input().split()))
-
-print(solution(board, moves))
+    print(f'#{tc} {max_kill}')
