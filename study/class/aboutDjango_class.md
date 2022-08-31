@@ -42,7 +42,7 @@
 > 인터넷이란?
 
 - 웹 브라우저를 켜고 주소창에 주소를 입력(www.google.com)
-- www, wmr World Wide Web은 **'전 세계에 퍼져 있는 거미줄 같은 연결망**
+- www,  World Wide Web은 **'전 세계에 퍼져 있는 거미줄 같은 연결망**
 
 > 어떻게 연결되어 있을까?
 
@@ -65,7 +65,7 @@
   
   ![캡처.PNG](Django_class_assets/d669e3dcfb0147c7b8395ae91fa5fb74302364d9.PNG)
   
-  클라이언트
+  > 클라이언트
 
 - 웹 사용자의 인터넷에 연결된 장치(ex. wi-fi에 연결된 컴퓨터 또는 모바일)
 
@@ -194,7 +194,7 @@
      ![22.PNG](Django_class_assets/e0995016cc56c6097178a03a2be22f1fe39a27fd.PNG)
      
      ![3.PNG](Django_class_assets/3c82ad75d723268c68965b512d892b01fbf05b81.PNG)
-  **작업 순서** 꼭 지켜서 해주자 !!!!!
+     **작업 순서** 꼭 지켜서 해주자 !!!!!
 
 > Django는 MTV 디자인 패턴
 

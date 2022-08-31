@@ -1,9 +1,16 @@
-# A+B, 둘째 줄에 A-B, 셋째 줄에 A*B, 넷째 줄에 A/B, 다섯째 줄에 A%B
-# 90 ~ 100점은 A, 80 ~ 89점은 B, 70 ~ 79점은 C, 60 ~ 69점은 D, 나머지 점수는 F
+import sys
+T = int(input())
+
+word = set(sys.stdin.readline().strip() for _ in range(T))
+word = list(word)
+# 단어 순서로 정렬
+word.sort()
+# 전체 길이로 정렬
+word.sort(key=len)
 
 
-word = input()
-alphabet = list(range(97,123))
 
-for i in alphabet:
-    print(word.find(chr(i)))
+
+# 단어 한 줄씩 출력
+for i in word:
+    print(i)

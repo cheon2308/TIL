@@ -1,0 +1,135 @@
+{
+  "main": {
+    "id": "30b2ca78dddf7f43",
+    "type": "split",
+    "children": [
+      {
+        "id": "b25eee3788a3444d",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Algorithm/baekjoon/1181_단어 정렬.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "1635dd43cea54706",
+    "type": "split",
+    "children": [
+      {
+        "id": "53af66c4858184b1",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b089e270554fb32f",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "7fd3bae85373dcdc",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "cc310f1ae295ff01",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "8d9f3a5cf74aedf7",
+    "type": "split",
+    "children": [
+      {
+        "id": "6379664ae48e1581",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b80b4231202b4cb0",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Algorithm/baekjoon/1181_단어 정렬.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "8c86d4565368189e",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Algorithm/baekjoon/1181_단어 정렬.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "6a7c23f899c0bc34",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "4cf7ac411f79abb3",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Algorithm/baekjoon/1181_단어 정렬.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "b25eee3788a3444d",
+  "lastOpenFiles": [
+    "무제노트.md"
+  ]
+}

@@ -1,0 +1,131 @@
+{
+  "main": {
+    "id": "86d1df6929f59bb6",
+    "type": "split",
+    "children": [
+      {
+        "id": "6f2a5cdbd1f2d64e",
+        "type": "leaf",
+        "state": {
+          "type": "empty",
+          "state": {}
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "28eafffab39a3fec",
+    "type": "split",
+    "children": [
+      {
+        "id": "da5afc011ac08b73",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "627bb2f720e75076",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "a525a2acd800f6ee",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "b2ca02a139781e31",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "right": {
+    "id": "8a41deb17e6386a4",
+    "type": "split",
+    "children": [
+      {
+        "id": "89487187db0c970a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1d2b7bd2540d9aae",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "e8164fd83cc02006",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "b6794fbbc5cf5179",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "88b62b7108189fa4",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "1d2b7bd2540d9aae",
+  "lastOpenFiles": [
+    "class/startDjango_command.md",
+    "class/aboutDjango_class.md",
+    "Django_class.md"
+  ]
+}
