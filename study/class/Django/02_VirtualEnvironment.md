@@ -37,7 +37,7 @@
 
 1.  터미널에서 **python -m venv venv** 명령어를 쳐준다.
     -   가상 환경을 생성해주므로 **'내가 사용할 폴더 내부'**에서 실행시켜주자!
-2.  **source -m venv/Scripts/activate**
+2.  **source venv/Scripts/activate**
     -   생성된 가상환경을 실행시킨다.
     -   강제 종료 시에는 Ctrl + C
 3.  **pip install django==3.2.13**  

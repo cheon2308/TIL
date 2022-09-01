@@ -550,7 +550,7 @@ b = copy.deepcopy(a) 같이 깊은 복사 이용
   
   - 데이터와 기능(Method) 분리, 추상화된 구조(인터페이스)
     
-    ![객체지향.png](python_class_assets/ee204139a875e9e2454257e3edaf901de3a41a29.png)
+    ![객체지향.png](ee204139a875e9e2454257e3edaf901de3a41a29.png)
 
 #### 필요한 이유는 ?
 
@@ -561,13 +561,13 @@ b = copy.deepcopy(a) 같이 깊은 복사 이용
 
 > - 컴퓨터 과학에서 객체 또는 오브젝트는 클래스에서 정의한 것을 토대로 메모리(실제 저장공간)에 할당된 것으로 프로그램에서 사용되는 데이터 또는 식별자에 의해 참조되는 공간을 의미하며, 변수, 자료 구조, 함수 또는 메서드가 될 수 있다.
 > - 즉 ! **속성과 행동**으로 구성된 모든것
->   ![화면 캡처 2022-07-27 093103.png](python_class_assets/ff33ec7085bb71d0f3e1acd7094084ac1893558a.png)
+>   ![화면 캡처 2022-07-27 093103.png](ff33ec7085bb71d0f3e1acd7094084ac1893558a.png)
 
 ### 객체와 인스턴스
 
 - 클래스로 만든 객체를 인스턴스 라고도 함
   
-  ![화면 캡처 2022-07-27 093459.png](python_class_assets/5f5d61748f30b70857332f9320364fcf6073177a.png)
+  ![화면 캡처 2022-07-27 093459.png](5f5d61748f30b70857332f9320364fcf6073177a.png)
 
 ### 클래스와 객체
 
@@ -658,14 +658,14 @@ b = copy.deepcopy(a) 같이 깊은 복사 이용
 
 - 인스턴스가 생성된 이후 ``<instance>.<name>``으로 접근 및 할당
   
-  ![화면 캡처 2022-07-27 101927.png](python_class_assets/f6947f3463cc9c515cd0693aaec64db5b5c68732.png)
+  ![화면 캡처 2022-07-27 101927.png](f6947f3463cc9c515cd0693aaec64db5b5c68732.png)
 
 ##### 클래스 변수
 
 > 클래스 선언 내부에서 정의
 > ``<classname>.<name>``으로 접근 및 할당
 > 
-> ![화면 캡처 2022-07-27 102820.png](python_class_assets/8ad40108b78c3670cfa967bf4a2043f55848cba6.png)
+> ![화면 캡처 2022-07-27 102820.png](8ad40108b78c3670cfa967bf4a2043f55848cba6.png)
 
 **클래스 변수를 변경**
 
@@ -673,7 +673,7 @@ b = copy.deepcopy(a) 같이 깊은 복사 이용
 
 - 인스턴스 변경시 **인스턴스.변수**
   
-  ![화면 캡처 2022-07-27 103929.png](python_class_assets/17054686a8a6cf4c90a945fe8a94d1aafc79175a.png)
+  ![화면 캡처 2022-07-27 103929.png](17054686a8a6cf4c90a945fe8a94d1aafc79175a.png)
 
 ## 메서드
 
@@ -699,7 +699,7 @@ b = copy.deepcopy(a) 같이 깊은 복사 이용
 > 
 > - Doublt underscore(__)가 있는 메서드는 특수한 동작을 위해 만들어진 메서드로, 스페셜 메서드, 혹슨 매직 메서드
 >   
->   ![화면 캡처 2022-07-27 110923.png](python_class_assets/275325fbd438ddfb275ce4cc54a61d9fb3498b7a.png)
+>   ![화면 캡처 2022-07-27 110923.png](275325fbd438ddfb275ce4cc54a61d9fb3498b7a.png)
 > 
 > - 특수 조작 행위 지정
 >   
@@ -715,7 +715,7 @@ b = copy.deepcopy(a) 같이 깊은 복사 이용
    
    - 호출 시, 첫 번째 인자로 클래스(cls)가 전달됨 
      
-     ![화면 캡처 2022-07-27 111513.png](python_class_assets/086e6ddc6ecfcc3c16bddabce729e278f5b2f99c.png)
+     ![화면 캡처 2022-07-27 111513.png](086e6ddc6ecfcc3c16bddabce729e278f5b2f99c.png)
 
 > **데코레이터**
 > : 함수를 어떤 함수로 꾸며서 새로운 기능 부여
@@ -758,13 +758,13 @@ b = copy.deepcopy(a) 같이 깊은 복사 이용
 > 상속없이 구현하는 경우 학생/교수 정보를 나타내기 어려움
 > 메서드 중복 정의됨
 > 
-> ![화면 캡처 2022-07-27 140320.png](python_class_assets/0001e97f62b1584211c4eda3a16a127cbf01f98b.png)
+> ![화면 캡처 2022-07-27 140320.png](0001e97f62b1584211c4eda3a16a127cbf01f98b.png)
 > 
-> ![화면 캡처 2022-07-27 140307.png](python_class_assets/ed6fa28907556dae466e1c29a3bec880bdf812f7.png)
+> ![화면 캡처 2022-07-27 140307.png](ed6fa28907556dae466e1c29a3bec880bdf812f7.png)
 
 **상속 사용**
 
-![화면 캡처 2022-07-27 140417.png](python_class_assets/de95be06b954328c9ac987c95ff104c81a4984fe.png)
+![화면 캡처 2022-07-27 140417.png](de95be06b954328c9ac987c95ff104c81a4984fe.png)
 
 - 관련 함수와 메서드
   
@@ -937,15 +937,15 @@ B. except문
 
 > 처리순서
 
-![화면 캡처 2022-07-27 160455.png](python_class_assets/dba985940c250c518e38d61668dafd3df545650e.png)
+![화면 캡처 2022-07-27 160455.png](dba985940c250c518e38d61668dafd3df545650e.png)
 
 - 작성 방법
   
-  ![화면 캡처 2022-07-27 161036.png](python_class_assets/f3ba7b9b7f91ff21ec0ecf95c5b84bc280a58bc1.png)
+  ![화면 캡처 2022-07-27 161036.png](f3ba7b9b7f91ff21ec0ecf95c5b84bc280a58bc1.png)
 
 - 예외 처리 예시
   
-  ![화면 캡처 2022-07-27 160720.png](python_class_assets/6729887c88482d88376cc657545336ac1d0ff0d7.png)
+  ![화면 캡처 2022-07-27 160720.png](6729887c88482d88376cc657545336ac1d0ff0d7.png)
 
 **예외 처리 종합**
 

@@ -1,5 +1,5 @@
-# Created by https://www.toptal.com/developers/gitignore/api/python,java,c++,visualstudiocode,visualstudio,windows,macos,django,pycharm,vuejs,obsidian
-# Edit at https://www.toptal.com/developers/gitignore?templates=python,java,c++,visualstudiocode,visualstudio,windows,macos,django,pycharm,vuejs,obsidian
+# Created by https://www.toptal.com/developers/gitignore/api/windows,obsidian,macos,python,pycharm,visualstudiocode,c++,visualstudio,django,vuejs
+# Edit at https://www.toptal.com/developers/gitignore?templates=windows,obsidian,macos,python,pycharm,visualstudiocode,c++,visualstudio,django,vuejs
 
 ### C++ ###
 # Prerequisites
@@ -203,31 +203,6 @@ cython_debug/
 #  and can be added to the global gitignore or merged into this file.  For a more nuclear
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
-
-### Java ###
-# Compiled class file
-*.class
-
-# Log file
-
-# BlueJ files
-*.ctxt
-
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
-
-# Package Files #
-*.jar
-*.war
-*.nar
-*.ear
-*.zip
-*.tar.gz
-*.rar
-
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
-replay_pid*
 
 ### macOS ###
 # General
@@ -902,4 +877,4 @@ FodyWeavers.xsd
 ### VisualStudio Patch ###
 # Additional files built by Visual Studio
 
-# End of https://www.toptal.com/developers/gitignore/api/python,java,c++,visualstudiocode,visualstudio,windows,macos,django,pycharm,vuejs,obsidian
+# End of https://www.toptal.com/developers/gitignore/api/windows,obsidian,macos,python,pycharm,visualstudiocode,c++,visualstudio,django,vuejs

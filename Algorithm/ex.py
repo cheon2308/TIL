@@ -1,16 +1,13 @@
-import sys
-T = int(input())
+N = int(input())
 
-word = set(sys.stdin.readline().strip() for _ in range(T))
-word = list(word)
-# 단어 순서로 정렬
-word.sort()
-# 전체 길이로 정렬
-word.sort(key=len)
+i = 0
+while i != N:
 
+    i+=1
+    hap = i
+    for j in str(i):
+        hap += int(j)
 
-
-
-# 단어 한 줄씩 출력
-for i in word:
-    print(i)
+    if hap == N:
+      print(i)
+      break
