@@ -550,7 +550,7 @@ b = copy.deepcopy(a) 같이 깊은 복사 이용
   
   - 데이터와 기능(Method) 분리, 추상화된 구조(인터페이스)
     
-    
+    <img src="python_classassets/1ad69ebb46a515227989d82acf468ba5db05754b.png" title="" alt="객체지향.png" width="401">
 
 #### 필요한 이유는 ?
 
@@ -561,13 +561,14 @@ b = copy.deepcopy(a) 같이 깊은 복사 이용
 
 > - 컴퓨터 과학에서 객체 또는 오브젝트는 클래스에서 정의한 것을 토대로 메모리(실제 저장공간)에 할당된 것으로 프로그램에서 사용되는 데이터 또는 식별자에 의해 참조되는 공간을 의미하며, 변수, 자료 구조, 함수 또는 메서드가 될 수 있다.
 > - 즉 ! **속성과 행동**으로 구성된 모든것
->   ![화면 캡처 2022-07-27 093103.png](python_classassets/a1623b0f3306f9b1c0cf48c233cf4f00dcad6f47.png)
+>   
+>   <img src="python_classassets/af85bd9b4a47d65f91acc32e06ac5944dc0eede8.png" title="" alt="화면 캡처 2022-07-27 093103.png" width="482">
 
 ### 객체와 인스턴스
 
 - 클래스로 만든 객체를 인스턴스 라고도 함
   
-  ![loading-ag-1375](5f5d61748f30b70857332f9320364fcf6073177a.png)
+  <img src="python_classassets/a1623b0f3306f9b1c0cf48c233cf4f00dcad6f47.png" title="" alt="loading-ag-1375" width="434">
 
 ### 클래스와 객체
 
@@ -651,18 +652,18 @@ b = copy.deepcopy(a) 같이 깊은 복사 이용
 
 ##### 인스턴스 변수
 
-> 인스턴스가 개인적으로 가지고 있는 속성(attribute)
+> 인스턴스가 개인적으로 가지고 있는 속성(attribute)SS
 > 각 인스턴스들의 고유한 변수
 
 - 생성자 메서드``(__init__)``에서 ``self.<name>``으로 정의
 
 - 인스턴스가 생성된 이후 ``<instance>.<name>``으로 접근 및 할당
   
-  ![화면 캡처 2022-07-27 101927.png](f6947f3463cc9c515cd0693aaec64db5b5c68732.png)
+  <img src="python_classassets/813046760b0e2b7807d6ebc8e92e8481d54e5ca3.png" title="" alt="화면 캡처 2022-07-27 101927.png" width="457">
 
 ##### 클래스 변수
 
-> 클래스 선언 내부에서 정의
+> 클래스 선언 내부에서 정의SS
 > ``<classname>.<name>``으로 접근 및 할당
 > 
 > obsidian://open?vault=TIL&file=study%2Fassets%2FPasted%20image%2020220901085028.png
@@ -672,7 +673,7 @@ b = copy.deepcopy(a) 같이 깊은 복사 이용
 
 - 인스턴스 변경시 **인스턴스.변수**
   
-  ![화면 캡처 2022-07-27 103929.png](obsidian://open?vault=TIL&file=study%2Fassets%2FPasted%20image%2020220901085028.png)
+  ![loading-ag-3241](python_classassets/ce9dd4b91c4ebb4e0d01d55e34882c307a216f59.png)
 
 ## 메서드
 
@@ -698,7 +699,7 @@ b = copy.deepcopy(a) 같이 깊은 복사 이용
 > 
 > - Doublt underscore(__)가 있는 메서드는 특수한 동작을 위해 만들어진 메서드로, 스페셜 메서드, 혹슨 매직 메서드
 >   
->   ![화면 캡처 2022-07-27 110923.png](obsidian://open?vault=TIL&file=study%2Fassets%2FPasted%20image%2020220901085028.png)
+>   <img src="python_classassets/52d3966b78fcae36bab790e68996fc35371f2f60.png" title="" alt="화면 캡처 2022-07-27 110923.png" width="465">
 > 
 > - 특수 조작 행위 지정
 >   
@@ -714,7 +715,7 @@ b = copy.deepcopy(a) 같이 깊은 복사 이용
    
    - 호출 시, 첫 번째 인자로 클래스(cls)가 전달됨 
      
-     ![](Pasted%20image%2020220902155600.png)
+     ![](python_classassets/1525eeadad06e3a75d33db1214e47153fc9d244b.png)
      
      > **데코레이터**
      > : 함수를 어떤 함수로 꾸며서 새로운 기능 부여
@@ -757,13 +758,13 @@ b = copy.deepcopy(a) 같이 깊은 복사 이용
 > 상속없이 구현하는 경우 학생/교수 정보를 나타내기 어려움
 > 메서드 중복 정의됨
 > 
-> ![화면 캡처 2022-07-27 140320.png](0001e97f62b1584211c4eda3a16a127cbf01f98b.png)
+> ![화면 캡처 2022-07-27 140320.png](python_classassets/9a7a2d800ef8850fc29dc53dbe38d79679727d02.png)
 > 
-> ![화면 캡처 2022-07-27 140307.png](ed6fa28907556dae466e1c29a3bec880bdf812f7.png)
+> ![화면 캡처 2022-07-27 140417.png](python_classassets/8a214b3a13bd481ed916409ee5df3dbbd012df78.png)
 
 **상속 사용**
 
-![화면 캡처 2022-07-27 140417.png](de95be06b954328c9ac987c95ff104c81a4984fe.png)
+![화면 캡처 2022-07-27 140307.png](python_classassets/0dcf37b4e61e4d408d7eb135a1612ea596f98a7b.png)
 
 - 관련 함수와 메서드
   
@@ -936,15 +937,15 @@ B. except문
 
 > 처리순서
 
-![화면 캡처 2022-07-27 160455.png](dba985940c250c518e38d61668dafd3df545650e.png)
+<img src="python_classassets/626e05461d5e61457a7274643ab3c9b41e0012be.png" title="" alt="화면 캡처 2022-07-27 160455.png" width="587">
 
 - 작성 방법
   
-  ![화면 캡처 2022-07-27 161036.png](f3ba7b9b7f91ff21ec0ecf95c5b84bc280a58bc1.png)
+  <img src="python_classassets/0c32f8b312ee84bf63bed99c2903dc2f21b0ba51.png" title="" alt="화면 캡처 2022-07-27 161036.png" width="505">
 
 - 예외 처리 예시
   
-  ![화면 캡처 2022-07-27 160720.png](6729887c88482d88376cc657545336ac1d0ff0d7.png)
+  <img src="python_classassets/b074710d9343b9f1cc4fb5ea5f3ea873bc3b55eb.png" title="" alt="화면 캡처 2022-07-27 160720.png" width="477">
 
 **예외 처리 종합**
 
