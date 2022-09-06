@@ -1,11 +1,11 @@
-import sys
-sys.stdin = open('input.txt')
+a, b = map(int, input().split())
 
-N = int(input())
-node = [0]*N
-child= list(map(int, input().split()))
-for i in range(N):
-	node[i] = int(input())
-
-erase = int(input())
-print(node)
+c = []
+d = 0
+for i in range(a+1):
+	if not a%i:
+		c.append(i)
+for j in range(b+1):
+	if not b%i and b//i in c:
+		d = i
+print(d)
