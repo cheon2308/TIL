@@ -1,4 +1,5 @@
 import sys
+from collections import deque
 sys.stdin = open('input.txt')
 input = sys.stdin.readline
 
@@ -7,9 +8,30 @@ input = sys.stdin.readline
 # 1 -> 2-> 3-> 7 이 된다면 4개를 넣을 수 있다.
 
 
+def boxes(num):
+    global cnt
+    visited = [0] * N
+    visited[num] = 1
+    q = deque()
+    q.append(num)
+    while q:
+        start = q.popleft()
+        for i in range(start+1, len(box)):
+            if box[start] < box[i]:
+                visited[i] = visited[start]+1
+                q.append(i)
+
+    return visited
+
 
 N = int(input())
 box  = list(map(int, input().split()))
+cnt = 0
 
+for i in range(N):
+    a = max(boxes(i))
 
-print(box)
+    if a > cnt:
+        cnt = a
+
+print(cnt)
