@@ -168,7 +168,7 @@ python manage.py migrate
 
 -   **showmigrations**   
     -   migrations 파일들이 migrate 됐는지 안됐는지 여부를 확인하는 용도
-    -   [X] 표시가 있으면 migrate가 완료되었음을 의미
+    -   [x] 표시가 있으면 migrate가 완료되었음을 의미
 
 ```
 python manage.py showmigrations
