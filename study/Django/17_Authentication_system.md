@@ -69,11 +69,6 @@
 -   대체하는 과정 외우기 어렵다면 해당 공식문서 보면서 순서대로 진행
 -   [https://docs.djangoproject.com/en/3.2/topics/auth/customizing/#substituting-a-custom-user-model](https://docs.djangoproject.com/en/3.2/topics/auth/customizing/#substituting-a-custom-user-model)
 
- [Customizing authentication in Django | Django documentation | Django
-
-Django The web framework for perfectionists with deadlines. Overview Download Documentation News Community Code Issues About ♥ Donate
-
-docs.djangoproject.com](https://docs.djangoproject.com/en/3.2/topics/auth/customizing/#substituting-a-custom-user-model)
 
 **1. AbstractUser를 상속받는 커스텀 User 클래스 작성**
 

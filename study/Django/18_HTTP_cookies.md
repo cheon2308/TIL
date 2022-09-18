@@ -111,11 +111,7 @@ HTTP 쿠키는 **상태가 있는 세션**을 만들도록 해 준다
     -   설정을 통해 다른 저장 방식으로 변경 가능
         -   [https://docs.djangoproject.com/en/3.2/topics/http/sessions/](https://docs.djangoproject.com/en/3.2/topics/http/sessions/)
 
- [How to use sessions | Django documentation | Django
 
-Django The web framework for perfectionists with deadlines. Overview Download Documentation News Community Code Issues About ♥ Donate
-
-docs.djangoproject.com](https://docs.djangoproject.com/en/3.2/topics/http/sessions/)
 
 -   Django는 **특정 session id를 포함하는 쿠키**를 사용해서 각각의 브라우저와 사이트가 연결된 session을 알아냄
 -   Django는 우리가 **session 메커니즘(복잡한 동작원리)에 대부분을 생각하지 않게끔 많은 도움**을 줌
