@@ -1,15 +1,13 @@
 홈페이지를 구성하며 CRUD를 다루는 방법을 배웠는데, 보통 일반인이 들어가서 CRUD를 하기 위해서는 **회원가입**의 절차가 필요하다. 
 
-우리는 관리자로서, 회원가입의 데이터가 어떻게 흘러가는지, 관리하는지에 대해 알아보자.
+우리는 관리자로서 **인증**된 User에게 **권한**을 부여하여 우리의 서비스를 이용하게 해준다.
 
 #### **목차**
 
-1. authentication system
-
-2. Substituting a custom User model
-
-1.  과정
-2.  db 초기화
+1.  authentication system
+2.  Substituting a custom User model
+    1.  과정
+    2.  db 초기화
 
 ---
 
