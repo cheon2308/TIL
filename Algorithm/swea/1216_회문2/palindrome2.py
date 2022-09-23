@@ -26,7 +26,7 @@ def is_palindrome(K):
     return 0
 
 
-for _ in range(11):
+for _ in range(10):
     tc = input()
     words = [input() for _ in range(100)]
 
