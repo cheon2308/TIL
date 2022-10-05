@@ -1,3 +1,7 @@
+저번 글에서 배웠던 Display와 Position 모두 CSS Layout technique의 종류 중 하나였다!
+
+오늘은 조금은 성격이 다른 **float**와 **flex box**를 이용하여 CSS Layout을 다뤄보자.
+
 > CSS Layout technique 종류
 
 -   Display
@@ -114,3 +118,7 @@ self
 -   기타 속성
     -   **flex-grow:** 남은 영역을 아이템에 분배
     -   **order**: 배치 순서
+
+누누히 말하지만 눈으로 봐서는 잘 모른다!!! 꼭 직접 만들어보고 눈으로 확인해보자.
+
+이번 시간까지 CSS를 배웠지만 많이 어렵다고 느껴진다.. 다음 시간엔 정말 유용한 **Bootstrap**이라는 천사 같은 존재를 만나보자!!

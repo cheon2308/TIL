@@ -1,3 +1,5 @@
+앞서 알아보았던 Web을 구조화, 즉 작성하기 위한 언어이다.
+
 **HTML**은 Hyper Text Markup Language의 약어이다. 대체 이게 뭘까?
 
 1.  Hyper Text
@@ -5,7 +7,7 @@
     -   문서와 문서를 이을 수 있는 기술
 2.  MarkUp language
     -   태그 등을 이용하여 문서나 데이터의 구조를 명시하는 언어
-    -   <h>제목</h>, `<p>내용</p>`와 같이 구성``
+    -   <h>제목</h>, <p>내용</p>와 같이 구성
 
 본격적인 내용에 들어가기 전에 HTML의 **기본 구조**를 파악하고 가보자!
 
@@ -43,15 +45,17 @@
 
 ![](https://blog.kakaocdn.net/dn/k1nv1/btrIXXtIdXp/kSEjDwy21bAZ8ytpycdE80/img.png)
 
+지금까지 알아본 HTML 코드의 예시
 
+----
 
 ![](https://blog.kakaocdn.net/dn/q6GXx/btrI4UIQYFv/sHmhNyCDV7P9EuQrUQUE0K/img.png)
 
-### 시맨틱 태그
+시맨틱 태그
 
-**시맨틱 태그**는 HTML 태그가 특정 목적, ==역할 및 의미적 가치(semantic value)==를 가지는 것이다!
+**시맨틱 태그**는 HTML 태그가 특정 목적, 역할 및 의미적 가치(semantic value)를 가지는 것이다!
 
->     ex) 앞의 글에서 보았던 (h1) 태그는 "이 페이지에서 최상위 제목"인 텍스트를 감싸는 역할(또는 의미)을 나타낸다.
+  ```ex) 앞의 글에서 보았던 <h1> 태그는 "이 페이지에서 최상위 제목"인 텍스트를 감싸는 역할(또는 의미)을 나타낸다.```
 
 **Non semantic 요소**로는 div, span 등이 있으며, a, form, table 태그들도 시맨틱 태그로 볼 수 있다.
 
@@ -70,7 +74,7 @@ HTML5에서는 기존에 단순히 콘텐츠의 구획을 나타내기 위해 �
 
 시맨틱 태그 사용 예시
 
-이렇게 복잡한데 그냥 <div>를 사용해서 전부 나타내면 안 될까? **No No**! 왜 시맨틱을 사용해야 되는지에 대해 알아보자.
+이렇게 복잡한데 그냥 ``<div>``를 사용해서 전부 나타내면 안 될까? **No No**! 왜 시맨틱을 사용해야 되는지에 대해 알아보자.
 
 > **의미론적 마크업**
 
@@ -92,6 +96,6 @@ HTML5에서는 기존에 단순히 콘텐츠의 구획을 나타내기 위해 �
 -   텍스트 파일인 HTML 문서를 브라우저에서 렌더링 하기 위한 구조이다.
 -   HTML 문서에 대한 모델을 구성하고, 문서 내의 각 요소에 접근 / 수정에 필요한 프로퍼티와 메서드를 제공한다.
 
-![[Pasted image 20220901085028.png]]
-DOM 트리의 구조
+![](https://blog.kakaocdn.net/dn/ccqphk/btrI2VHXRZc/hfraPzOLFXwt76ZbxgpBR0/img.png)
 
+DOM 트리의 구조

@@ -1,3 +1,5 @@
+앞에서 잠시 살펴 보았던 **선택자**에 대해서 알아보자
+
 ![](https://blog.kakaocdn.net/dn/chQjd8/btrI2pP3uTC/bIWkCkt94Ge00JZVgcFeR1/img.png)
 
 > 선택자의 종류에 대해 간단하게 알아보고 뒤에서 상세하게 다뤄보자
@@ -79,3 +81,5 @@ vscode에서 쳐보며 어떻게 동작하는지 눈으로 확인해보자!
 ![](https://blog.kakaocdn.net/dn/blGChJ/btrI3ysfjd4/rHltkSoQeHwkfCqvRzpDKK/img.png)
 
 이 코드를 실행시켜 본다면 color는 상속이 되어 **테스트**로 나타나지만 border는 상속이 되지 않아 주변에 테두리가 생기지 않는 것을 눈으로 볼 수 있다.
+
+오늘 선택자에 대해 배워보았다. CSS를 하며 내가 원하는 요소에만 특정 Style을 지정해 줄 수 있기 때문에 아주 중요한 내용이라고 생각한다!
