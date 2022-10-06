@@ -40,7 +40,7 @@
 2.  **source venv/Scripts/activate**
     -   생성된 가상환경을 실행시킨다.
     -   강제 종료 시에는 Ctrl + C
-3. ``pip install django==3.2.13  
+3. ``pip install django==3.2.13``  
     -   내가 사용할 tool, 언어 등을 가상 환경 내부에서 설치해준다. django를 사용하기 위해 설치해보자
     -   따라서 운영체제에 설치되어 있는 파이썬이나, 동일 pc내의 다른 프로젝트 파일에 영향을 주지 않는다.
 4.  **pip freeze > requirements.txt**  

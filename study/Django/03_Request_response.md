@@ -11,6 +11,9 @@
 
 ![](https://blog.kakaocdn.net/dn/oId3e/btrK3ZW27lu/unztuvkQumvFNlNyif2wk1/img.png)
 
+
+
+
 -   이제 앱 폴더 - view.py에 사용할 데이터 함수를 정의해준다.
     -   **def 함수 name(request): return render(request, '함수 name.html')**
     -   HTTP 요청을 수신하고 HTTP 응답을 반환하는 함수 작성
