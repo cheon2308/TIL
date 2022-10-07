@@ -5,6 +5,7 @@
 -   **프로젝트 폴더 - urls.py의 urlpatterns 리스트 내에 경로 지정**
     -   **path('app name/', include('app name.urls'))**
 -   **사용할 앱 폴더 - urls.py 내에** 모듈을 import해준다.  
+	-   **from django.urls import path**
     -   **from 'app name' import views**
 -   마찬가지로 **앱 폴더 -urlpatterns 리스트 내부**에 **경로를 지정**해준다.
     -   **path('함수 name/', views. 함수 name),**
@@ -20,6 +21,7 @@
     -   Template에게 HTTP 응답 서식을 맡김
 
 ![](https://blog.kakaocdn.net/dn/Nyhk1/btrK6BUHndN/I3UQuqATCaqkURnfnECUt0/img.png)
+
 
 > render 함수
 

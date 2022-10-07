@@ -86,6 +86,7 @@
 
 -   각 모델은 django.models.Model 클래스의 서브 클래스로 표현됨
     -   즉, 각 모델은 **django.db.models 모듈의 Model 클래스를 상속받아 구성**된다.
+    -   ``from django.db import models``
     -   **클래스 상속 기반 형태의 Django 프레임워크 개발**
         -   프레임워크에서는 잘 만들어진 도구를 가져다가 잘 쓰는 것
 
@@ -168,7 +169,7 @@ python manage.py migrate
 
 -   **showmigrations**   
     -   migrations 파일들이 migrate 됐는지 안됐는지 여부를 확인하는 용도
-    -   [x] 표시가 있으면 migrate가 완료되었음을 의미
+    -   'x' 표시가 있으면 migrate가 완료되었음을 의미
 
 ```
 python manage.py showmigrations
