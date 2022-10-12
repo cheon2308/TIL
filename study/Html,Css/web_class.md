@@ -107,7 +107,7 @@
 - HTML 태그가 특정 목적, 역할 및 의미적 가치(semantic value)를 가지는 것
   :(ex - h1 태그는 최상위 제목인 텍스트를 감싸는 역할)
   
-  ![화면 캡처 2022-08-01 112820.png](7f6b9a31a33e24c59a5d3861b0acb4fdef8d158d.png)
+  ![화면 캡처 2022-08-01 112820.png](web_class_assets/7f6b9a31a33e24c59a5d3861b0acb4fdef8d158d.png)
 
 **사용 이유**
 
@@ -132,15 +132,15 @@
 
 > 텍스트 요소
 
- ![화면 캡처 2022-08-01 113350.png](6a2c365d20abdb014b10c83e6c2502860d5eb2ac.png)
+ ![화면 캡처 2022-08-01 113350.png](web_class_assets/6a2c365d20abdb014b10c83e6c2502860d5eb2ac.png)
 
-![화면 캡처 2022-08-01 123720.png](ad8e0aef49aefa1ee726f4689153c026924f7b99.png)
+![화면 캡처 2022-08-01 123720.png](web_class_assets/ad8e0aef49aefa1ee726f4689153c026924f7b99.png)
 
 > 그룹 요소
 
 <img title="" src="web_class_assets/5a5a0d2f67fdd9a7a2a6fcc88e8a615ffa01eccc.png" alt="화면 캡처 2022-08-01 113418.png" width="817">
 
-![화면 캡처 2022-08-01 123731.png](0fc6928212969ed649aadc5c1636fcec230a47d8.png)
+![화면 캡처 2022-08-01 123731.png](web_class_assets/0fc6928212969ed649aadc5c1636fcec230a47d8.png)
 
 > 중요!! **form** 
 
@@ -195,21 +195,21 @@
 
 1. header
    
-   ![화면 캡처 2022-08-01 141636.png](9fb6c20f3fe014a87f1c4722ca0b39075bc6d6d9.png)
+   ![화면 캡처 2022-08-01 141636.png](web_class_assets/9fb6c20f3fe014a87f1c4722ca0b39075bc6d6d9.png)
 
 2. section
    
-   ![화면 캡처 2022-08-01 141644.png](f48c7b5f840f94428ebd49ad7b5d7afc8e780c6b.png)
+   ![화면 캡처 2022-08-01 141644.png](web_class_assets/f48c7b5f840f94428ebd49ad7b5d7afc8e780c6b.png)
    
-   ![화면 캡처 2022-08-01 141652.png](f77db69dd65dd7fd71057b672940b87680f7f6f7.png)
+   ![화면 캡처 2022-08-01 141652.png](web_class_assets/f77db69dd65dd7fd71057b672940b87680f7f6f7.png)
    
-   ![화면 캡처 2022-08-01 141819.png](0f1e44e295f91dbf5a9670cd3704059ce1e15b44.png)
+   ![화면 캡처 2022-08-01 141819.png](web_class_assets/0f1e44e295f91dbf5a9670cd3704059ce1e15b44.png)
    
-   ![화면 캡처 2022-08-01 141842.png](a94e405a1b5bb511b86e520e1ee807895a3953cb.png)
+   ![화면 캡처 2022-08-01 141842.png](web_class_assets/a94e405a1b5bb511b86e520e1ee807895a3953cb.png)
 
 3. footer
    
-   ![화면 캡처 2022-08-01 141852.png](ab15a4438953b789923084cc12473dc534bed8e3.png)
+   ![화면 캡처 2022-08-01 141852.png](web_class_assets/ab15a4438953b789923084cc12473dc534bed8e3.png)
 
 ---
 
@@ -219,7 +219,7 @@
 
 - 스타일을 지정하기 위한 언어, **선택하고, 스타일을 지정한다.**
   
-  ![화면 캡처 2022-08-01 142502.png](838646e147484b4c5471432e10c081876332c3a4.png)
+  ![화면 캡처 2022-08-01 142502.png](web_class_assets/838646e147484b4c5471432e10c081876332c3a4.png)
 
 #### 정의방법
 
@@ -227,16 +227,16 @@
   : 해당 태그에 직접 style 활용
   : 중복도 있을 것이고, 찾기 어려워서 실수가 잦아짐
   
-  ![화면 캡처 2022-08-01 143056.png](6945221c6253339520846b43fe9dc508ca2ff8e6.png)
+  ![화면 캡처 2022-08-01 143056.png](web_class_assets/6945221c6253339520846b43fe9dc508ca2ff8e6.png)
 
 - 내부 참조 -`<style>`
   : 코드가 너무 길어짐
   
-  ![화면 캡처 2022-08-01 143046.png](4181ec285f585e7d7c70c2e5c648b9a64033ea3a.png)
+  ![화면 캡처 2022-08-01 143046.png](web_class_assets/4181ec285f585e7d7c70c2e5c648b9a64033ea3a.png)
 
 - 외부 참조 - 분리된 CSS 파일
   : 가장 많이 사용  
-  ![화면 캡처 2022-08-01 143106.png](6373ff5ef1c901be97feb5e0cf78dc8697664f54.png)
+  ![화면 캡처 2022-08-01 143106.png](web_class_assets/6373ff5ef1c901be97feb5e0cf78dc8697664f54.png)
 
 #### CSS with 개발자 도구
 
@@ -259,7 +259,7 @@
 
 - 구조적 의사 클래스, 기타 의사 클래스, 의사 엘리먼트, 속성 선택자
   
-  ![화면 캡처 2022-08-01 150247.png](2123c22e1465808fd550e8bac3db700b728c03b2.png)
+  ![화면 캡처 2022-08-01 150247.png](web_class_assets/2123c22e1465808fd550e8bac3db700b728c03b2.png)
 
 > 선택자 정리(아래로 내려갈수록 좁아짐)
 
@@ -397,11 +397,11 @@
 
 4. content
    
-   ![화면 캡처 2022-08-01 160107.png](c1b767441b4b5e789358525eb862fe38cba3ccb3.png)
+   ![화면 캡처 2022-08-01 160107.png](web_class_assets/c1b767441b4b5e789358525eb862fe38cba3ccb3.png)
    
-   ![화면 캡처 2022-08-01 160612.png](344916976010a58ad55e80d9413f684d59632ba3.png)
+   ![화면 캡처 2022-08-01 160612.png](web_class_assets/344916976010a58ad55e80d9413f684d59632ba3.png)
    
-   ![화면 캡처 2022-08-01 160635.png](54f7c8ca8f305541c8ed9e3d3f2bd903afe5f6e8.png)
+   ![화면 캡처 2022-08-01 160635.png](web_class_assets/54f7c8ca8f305541c8ed9e3d3f2bd903afe5f6e8.png)
 
 #### BOX-SIZING
 
@@ -435,7 +435,7 @@
 
 ##### 속성에 따른 수평 정렬
 
-![화면 캡처 2022-08-01 161516.png](2305615a821590e206a8577f4e3b883f419b74d1.png)
+![화면 캡처 2022-08-01 161516.png](web_class_assets/2305615a821590e206a8577f4e3b883f419b74d1.png)
 
 3. display: inline-block
    
@@ -452,28 +452,28 @@
 
 ### CSS 포지션
 
-![화면 캡처 2022-08-01 161932.png](9832439c4cfaa1f8b52a2f1e7c46f2faf829af82.png)
+![화면 캡처 2022-08-01 161932.png](web_class_assets/9832439c4cfaa1f8b52a2f1e7c46f2faf829af82.png)
 
-![화면 캡처 2022-08-01 161944.png](51529f1e50ff8a9575e302593b21b7f0b426b02b.png)
+![화면 캡처 2022-08-01 161944.png](web_class_assets/51529f1e50ff8a9575e302593b21b7f0b426b02b.png)
 
-![화면 캡처 2022-08-01 161952.png](d8f7ffd2c5c370048023651ef5915a1c325ed5b5.png)
+![화면 캡처 2022-08-01 161952.png](web_class_assets/d8f7ffd2c5c370048023651ef5915a1c325ed5b5.png)
 
 1. static
 
-![화면 캡처 2022-08-01 162121.png](3314822f845258030764ca84d9928017617be893.png)
+![화면 캡처 2022-08-01 162121.png](web_class_assets/3314822f845258030764ca84d9928017617be893.png)
 
 2. relative
 
-![화면 캡처 2022-08-01 162128.png](4d1bdf44896b88b69cac6f6cf711334e4410a54f.png)
+![화면 캡처 2022-08-01 162128.png](web_class_assets/4d1bdf44896b88b69cac6f6cf711334e4410a54f.png)
 
 3. absolute   
-   ![화면 캡처 2022-08-01 162139.png](f6c13c675fa27d064f362b9cb200ec6cf26464ed.png)
+   ![화면 캡처 2022-08-01 162139.png](web_class_assets/f6c13c675fa27d064f362b9cb200ec6cf26464ed.png)
 4. fixed   
-   ![화면 캡처 2022-08-01 162154.png](e8cf218eb40bdd5af51aba1bc1d2d0951ff7df31.png)
+   ![화면 캡처 2022-08-01 162154.png](web_class_assets/e8cf218eb40bdd5af51aba1bc1d2d0951ff7df31.png)
 
 **absolute vs relative**
 
-![화면 캡처 2022-08-01 162356.png](c0242beeb7259948ee0d9cc2e7a21f2071bee1c2.png)
+![화면 캡처 2022-08-01 162356.png](web_class_assets/c0242beeb7259948ee0d9cc2e7a21f2071bee1c2.png)
 
 > absolute : 부모를 기준 가운데 위치
 > fixed : 브라우저를 기준으로 우측 하단에 위치
@@ -484,7 +484,7 @@
 
 ##### 원칙 정리
 
-![화면 캡처 2022-08-01 162641.png](6384e34c9cceb68799668f2c0919f0fc6e07379c.png)
+![화면 캡처 2022-08-01 162641.png](web_class_assets/6384e34c9cceb68799668f2c0919f0fc6e07379c.png)
 
 # CSS LAYOUT
 
@@ -543,10 +543,10 @@
    
    - flex-direction
      
-     ![화면 캡처 2022-08-03 164720.png](5aeee66cae94eb6637630e31a245e8f544306b65.png)
+     ![화면 캡처 2022-08-03 164720.png](web_class_assets/5aeee66cae94eb6637630e31a245e8f544306b65.png)
    
    - flex-wrap
-     ![화면 캡처 2022-08-03 164754.png](0fb4e8fab21da1762e37ec76b705dc8a25d9e109.png)
+     ![화면 캡처 2022-08-03 164754.png](web_class_assets/0fb4e8fab21da1762e37ec76b705dc8a25d9e109.png)
    
    - flex-flow
      
@@ -557,11 +557,11 @@
 2. 공간 나누기
    
    - justify-content (main axis)
-     ![화면 캡처 2022-08-03 164928.png](5bd9d0cf3794e704024af8c02c5232307a3c5329.png)
+     ![화면 캡처 2022-08-03 164928.png](web_class_assets/5bd9d0cf3794e704024af8c02c5232307a3c5329.png)
    
    - align-content (cross axis)
      
-     ![화면 캡처 2022-08-03 164936.png](8285715732398109b5db4dab2f5dbb7a01255c63.png)
+     ![화면 캡처 2022-08-03 164936.png](web_class_assets/8285715732398109b5db4dab2f5dbb7a01255c63.png)
      
      > space-between : 아이템 사이의 간격을 균일하게 분배
      > space-around: 아이템을 둘러싼 영역을 균일하게 분배(가질 수 있는 영역을 반으로 나눠서 양쪽에)
@@ -571,11 +571,11 @@
    
    - align-items (모든 아이템을 cross axis 기준으로)
      
-     ![화면 캡처 2022-08-03 165057.png](f7f2a910c9d0884021125002f8080238a83edb98.png)
+     ![화면 캡처 2022-08-03 165057.png](web_class_assets/f7f2a910c9d0884021125002f8080238a83edb98.png)
    
    - align-self (개별 아이템)
    
-   ![화면 캡처 2022-08-03 165136.png](3b4197b8eb28ac036d85d7aa0fa7b38d9c07fc46.png)
+   ![화면 캡처 2022-08-03 165136.png](web_class_assets/3b4197b8eb28ac036d85d7aa0fa7b38d9c07fc46.png)
 
 4. 기타
    
@@ -602,7 +602,7 @@ margin: auto;
 
 #### 활용 레이아웃 - 카드배치
 
-![화면 캡처 2022-08-03 165421.png](58fd5556a7449c1de39a777b7b9f91ca62eb8721.png)
+![화면 캡처 2022-08-03 165421.png](web_class_assets/58fd5556a7449c1de39a777b7b9f91ca62eb8721.png)
 
 # IE는 항상 확인하자.
 
@@ -658,11 +658,11 @@ margin: auto;
 
 ##### spacing 종합
 
-![화면 캡처 2022-08-03 171256.png](aacdf548a64e3f68731843e00e918009aac4c3be.png)
+![화면 캡처 2022-08-03 171256.png](web_class_assets/aacdf548a64e3f68731843e00e918009aac4c3be.png)
 
 #### 2. Color
 
-![화면 캡처 2022-08-03 171604.png](88b52b6e6e60e79fae8d2f4a06253ebacbea2e7b.png)
+![화면 캡처 2022-08-03 171604.png](web_class_assets/88b52b6e6e60e79fae8d2f4a06253ebacbea2e7b.png)
 
 - 이미 CDN에 기본 저장된 색들로서 CSS파일에서 사용 가능
 - 새로 다운받아서 사용할 수도 있다. CSS파일에서 변경 가능
@@ -680,31 +680,31 @@ margin: auto;
    
    - 클릭 했을 때 어떤 동작이 일어나도록 하는 요소
      
-     ![화면 캡처 2022-08-03 171950.png](1bb36d4973e7088090c45863fa562cbcea8b4489.png)
+     ![화면 캡처 2022-08-03 171950.png](web_class_assets/1bb36d4973e7088090c45863fa562cbcea8b4489.png)
 
 2. Dropdowns
    
    - dropdown, dropdown-menu, dropdown-item 클래스를 활용해 옵션 메뉴를 만들 수 있다.
      
-     ![화면 캡처 2022-08-03 172039.png](f2b876ee385a0b17112333ed94a4e63b0f8f07af.png)
+     ![화면 캡처 2022-08-03 172039.png](web_class_assets/f2b876ee385a0b17112333ed94a4e63b0f8f07af.png)
 
 3. Forms > Form controls
    
    - form-control 클래스를 사용해 <input> 및 <form> 태그를 스타일링할 수 있습니다.
      
-     ![화면 캡처 2022-08-03 172132.png](e699511a6736d3e028cf5655ef9f6cd8db9be52c.png)
+     ![화면 캡처 2022-08-03 172132.png](web_class_assets/e699511a6736d3e028cf5655ef9f6cd8db9be52c.png)
 
 4. Navbar
    
    - navbar 클래스를 활용하면 네비게이션 바를 제작할 수 있습니다.
      
-     ![화면 캡처 2022-08-03 172210.png](0a7e3fea65124a06e1923d599cb98718a911a3e2.png)
+     ![화면 캡처 2022-08-03 172210.png](web_class_assets/0a7e3fea65124a06e1923d599cb98718a911a3e2.png)
 
 5. Carousel
    
    - 콘텐츠를 순환시키기 위한 슬라이드쇼
      
-     ![화면 캡처 2022-08-03 172238.png](ddd39c5821bf837d9ea6125242a81bff088a1972.png)
+     ![화면 캡처 2022-08-03 172238.png](web_class_assets/ddd39c5821bf837d9ea6125242a81bff088a1972.png)
 
 6. Modal
    
@@ -714,17 +714,17 @@ margin: auto;
    
    - 페이지를 이동하면 자연스럽게 사라짐(제거를 하지 않고도 배경 클릭시 사라짐)
      
-     ![화면 캡처 2022-08-03 172330.png](bd96fe5fa4831478b6fd5a9433eeb20973ff5811.png)
+     ![화면 캡처 2022-08-03 172330.png](web_class_assets/bd96fe5fa4831478b6fd5a9433eeb20973ff5811.png)
 
 7. Flexbox in Bootstrap
    
-   ![화면 캡처 2022-08-03 172355.png](52d8103f8a9ca949fa1cb5717a2eb2d21f07b00c.png)
+   ![화면 캡처 2022-08-03 172355.png](web_class_assets/52d8103f8a9ca949fa1cb5717a2eb2d21f07b00c.png)
 
 8. Card > Grid Card
    
    - 화면이 작아지면 1줄에 표시되는 카드의 개수가 줄어듬
      
-     ![화면 캡처 2022-08-03 172552.png](e3812efe9d773b3879b09fb7e6965e1b490de6b0.png)
+     ![화면 캡처 2022-08-03 172552.png](web_class_assets/e3812efe9d773b3879b09fb7e6965e1b490de6b0.png)
 
 ###### Responsive Web
 
@@ -754,32 +754,32 @@ margin: auto;
 
 - **12개의 column, 6개의 grid breakpoints**   1
   
-  ![화면 캡처 2022-08-03 173042.png](3e7df16e8987f1beadee81f9a3a6bc57116bc85b.png)
+  ![화면 캡처 2022-08-03 173042.png](web_class_assets/3e7df16e8987f1beadee81f9a3a6bc57116bc85b.png)
 
 ##### breakpoints
 
-![화면 캡처 2022-08-03 173128.png](62f558ccefb11377961f59d75ccb858dda68d867.png)
+![화면 캡처 2022-08-03 173128.png](web_class_assets/62f558ccefb11377961f59d75ccb858dda68d867.png)
 
-![화면 캡처 2022-08-03 173141.png](bf2937ec939e65f1ebe9428c52421cefb11d65e8.png)
+![화면 캡처 2022-08-03 173141.png](web_class_assets/bf2937ec939e65f1ebe9428c52421cefb11d65e8.png)
 
-![화면 캡처 2022-08-03 173149.png](fd087c58a8b1568446078243ac64be2e309f1bc9.png)
+![화면 캡처 2022-08-03 173149.png](web_class_assets/fd087c58a8b1568446078243ac64be2e309f1bc9.png)
 
-![화면 캡처 2022-08-03 173159.png](0a71259a53bdc01684760fefa2724082e2d230ce.png)
+![화면 캡처 2022-08-03 173159.png](web_class_assets/0a71259a53bdc01684760fefa2724082e2d230ce.png)
 
-![화면 캡처 2022-08-03 173219.png](9b66b54478c7c88f7510bc754d7724be698c06a2.png)
+![화면 캡처 2022-08-03 173219.png](web_class_assets/9b66b54478c7c88f7510bc754d7724be698c06a2.png)
 
-![화면 캡처 2022-08-03 173229.png](d2a2708d90abba54381c6851e07d7b7b3c4b24af.png)
+![화면 캡처 2022-08-03 173229.png](web_class_assets/d2a2708d90abba54381c6851e07d7b7b3c4b24af.png)
 
-![화면 캡처 2022-08-03 173246.png](129ffe9d46bc2552b7960cbfce24d86449b58e09.png)
+![화면 캡처 2022-08-03 173246.png](web_class_assets/129ffe9d46bc2552b7960cbfce24d86449b58e09.png)
 
-![화면 캡처 2022-08-03 173400.png](73f1b0d2259f4f46b1c05f185947adf64680a7aa.png)
+![화면 캡처 2022-08-03 173400.png](web_class_assets/73f1b0d2259f4f46b1c05f185947adf64680a7aa.png)
 
-![화면 캡처 2022-08-03 173410.png](4e1520744d347156409b912de60f48baeb37d607.png)
+![화면 캡처 2022-08-03 173410.png](web_class_assets/4e1520744d347156409b912de60f48baeb37d607.png)
 
-![화면 캡처 2022-08-03 173419.png](40f1503365044e5b0a978abe7cc43cb709c8ff7a.png)
+![화면 캡처 2022-08-03 173419.png](web_class_assets/40f1503365044e5b0a978abe7cc43cb709c8ff7a.png)
 
-![화면 캡처 2022-08-03 173429.png](a5f26dde9813dd0527676e5973f26834773b799c.png)
+![화면 캡처 2022-08-03 173429.png](web_class_assets/a5f26dde9813dd0527676e5973f26834773b799c.png)
 
-![화면 캡처 2022-08-03 173437.png](1a90e33695aba324429f7c21bac5e6ddd08cfc09.png)
+![화면 캡처 2022-08-03 173437.png](web_class_assets/1a90e33695aba324429f7c21bac5e6ddd08cfc09.png)
 
-![화면 캡처 2022-08-03 173446.png](8d1de6560db9085ca99c79f0e6b163d9e693992f.png)
+![화면 캡처 2022-08-03 173446.png](web_class_assets/8d1de6560db9085ca99c79f0e6b163d9e693992f.png)
