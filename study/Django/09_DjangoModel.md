@@ -182,7 +182,7 @@ python manage.py showmigrations
 python manage.py sqlmigrate articles 0001
 ```
 
-그런데 말입니다.. makemigrations로 인해 만들어진 설계도는 **python**으로 작성되어 있는데 **DB**는 **SQL**만 알아들을 수 있다. 어떻게 이 설계도를 이해하고 동기화를 이루는 것일까?
+makemigrations로 인해 만들어진 설계도는 **python**으로 작성되어 있는데 **DB**는 **SQL**만 알아들을 수 있다. 어떻게 이 설계도를 이해하고 동기화를 이루는 것일까?
 
 ### **#  ORM**
 
