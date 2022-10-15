@@ -79,17 +79,23 @@ syntax는 언어의 구조 및 문법에 관한 것으로 "내가 타당한 문�
 
 위의 오른쪽 사진에서 보듯이 foods.0과 같이 배열의 인덱스 및 딕셔너리의 키 값에 접근할 수 있다.
 
+
+
 2. filters
 
 ![](https://blog.kakaocdn.net/dn/bb3ILv/btrK3X5Wq56/srcqt4KibenAiLIfprFoi1/img.png)
 
 join 함수를 이용하여 리스트 형태가 아닌 문자열 형태로 출력도 할 수 있고 여러가지로 유용하게 사용할 수 있는 것을 볼 수 있다.
 
+
+
 3. tags
 
 ![](https://blog.kakaocdn.net/dn/dFo5z3/btrK30BF7TB/kRiMBSnk2ovcNBbbl6GDJk/img.png)
 
 반복문을 사용하기 위하여 {% for ... 과 같이 tags를 활용하여 출력해준다!
+
+
 
 4. comments
 

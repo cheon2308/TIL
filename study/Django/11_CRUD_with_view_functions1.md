@@ -94,7 +94,7 @@ create 로직을 구현하기 위해서는 과연 몇 개의 view 함수가 필�
 
 이제는 action을 통하여 데이터를 보낼 곳이 생겼으므로 작성이 잘 되었을 것이다.
 
-원하는 결과가 나왔는지 index 페이지에 렌더링 하기 위하여 view 함수 내부에 **return render(****request,** **'articles/index.html****')로 수정해주었다**.
+원하는 결과가 나왔는지 index 페이지에 렌더링 하기 위하여 view 함수 내부에 **return render(request, **'articles/index.html**')로 수정해주었다**.
 
 ![](https://blog.kakaocdn.net/dn/4oncQ/btrLuhaUwb8/oXs15AWaSJ2Rh8OkpZUzy1/img.png)
 
