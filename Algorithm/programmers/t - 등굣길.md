@@ -39,6 +39,6 @@ def solution(m, n, puddles):
                 road[k][l] = road[k - 1][l] + road[k][l - 1]
 
 
-    return road[n][m]
+    return road[n][m] % 1000000007
 
 ```
