@@ -1,0 +1,82 @@
+[프로그래머스 여행 경로](https://school.programmers.co.kr/learn/courses/30/lessons/43164](https://school.programmers.co.kr/learn/courses/30/lessons/43164)
+
+## 조건 
+
+- 주어진 항공권을 모두 이용하여 여행경로 짠다.
+![](assets/Pasted%20image%2020221017205437.png)
+
+
+## 접근 방법
+
+- 너비 우선 탐색을 이용하여 출력해주면 된다.
+- 이 떄, 가능한 경로가 2개 이상이면 사전순 정렬이기 때문에,
+- 먼저 sort() 를 이용하여 사전 순 정렬을 해준다.
+
+
+
+#### bfs사용 실패
+
+```python
+from collections import deque
+def solution(tickets):
+    q = deque()
+    start = 'ICN'
+    answer = [start]
+    # 사전순 방문을 위한 도착지 기준 오름차순
+    tickets.sort(key = lambda x:x[1])
+    
+    q.append(start)
+    while q:
+        country = q.popleft()
+        for i in tickets:
+            # 출발지가 맞다면
+            if i[0] == country:
+                # 도착지 담아주고 경로에 추가
+                q.append(i[1])
+                answer.append(i[1])
+                # 현재 가지고 있는 티켓 소모 해주기
+                tickets.remove(i)
+                break
+                
+    return answer
+```
+
+
+-> 도착지 사전순 정렬을 해주니, 항공권을 모두 사용한다는 보장이 없다.
+
+
+
+따라서 dfs를 이용하여 풀어주자
+
+
+```python 
+from collections import defaultdict
+def solution(tickets):
+    route = defaultdict(list)
+    
+    # 출발지와 도착지를 딕셔너리에 담아준다.
+    for s, e in tickets:
+        route[s].append(e)
+        
+    visited = list()
+    # 도착지들 내림차순 정렬
+    for k in route.keys():
+        route[k].sort(reverse = True)  
+    
+    # 출발지 인천
+    stack = ['ICN']
+    while stack:
+        country = stack[-1]
+        # 여기서 출발하는 표가 없거나
+        # 티켓을 써버린 경우
+        if country not in route or not route[country]:
+            # 경유지로 넣어주기
+            visited.append(stack.pop())
+        # 표가 있다면
+        # 도착지 stack에 넣어주기
+        else:
+            stack.append(route[country].pop())
+    
+    # stack으로 마지막 지점이 처음 출발지가 된다.
+    return visited[::-1]
+```
