@@ -54,7 +54,7 @@
 
 > **참조 값과 반환 값**
 
-```
+```PYTHON
 model = Article
 ```
 

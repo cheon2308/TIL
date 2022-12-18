@@ -62,7 +62,7 @@
 -   모든사용자 지정 데이터는 dataset 속성을 통해 사용할 수 있음
 -   https://developer.mozilla.org/ko/docs/Web/HTML/Global_attributes/data-*
 
-```
+```javascript
 <div data-my-id="my-data"></div>
 <script>
   const myId = event.target.dataset.myId

@@ -11,7 +11,7 @@
 
 > 관련 태그
 
-```
+```PYTHON
 {% extends 'skeleton name' %}
 ```
 
@@ -19,7 +19,7 @@
 
 - **중요! 반드시 템플릿 최상단에 작성되어야 한다 - 2개 이상 사용 x**
 
-```
+```PYTHON
 {% block content %}
 {% endblock content %} 또는 {% endblock %}
 ```

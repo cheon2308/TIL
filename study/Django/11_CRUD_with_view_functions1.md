@@ -116,7 +116,7 @@ create 로직을 구현하기 위해서는 과연 몇 개의 view 함수가 필�
     -   **view name (URL pattern name)**
     -   **absolute or relative URL**
 
-```
+```PYTHON
 # 1.
 return redirect('articles:index')
 

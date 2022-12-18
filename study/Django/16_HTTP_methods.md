@@ -20,7 +20,7 @@ view 함수를 작성했다면 이번에는 **View decorator**라는 것을 이
 -   일치하지 않는 메서드 요청이라면 **405 Method Not Allowed를 반환**
 -   **405 Method Not Allowed :** 요청 방법이 서버에게 전달 되었으나 사용 불가능한 상태
 
-```
+```PYTHON
 # 모듈이므로 사용하기 위하여
 from django.views.decorators.http import 'decorator name'
 ```

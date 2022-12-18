@@ -89,13 +89,13 @@
     -   reverse, sortBy, range, random ...
     -   https://lodash.com/ 
 
-```
+```javascript
 <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
 ```
 
 > **랜덤 번호 6개 추출하여 공에 넣어주기**
 
-```
+```javascript
 <style>
     /* 스타일은 수정하지 않습니다. */
     .ball {
@@ -156,7 +156,7 @@
 
 > **ToDo 리스트 만들기**
 
-```
+```html
 <body>
   <form action="#">
     <input type="text" class="inputData">
@@ -196,7 +196,7 @@
 
 콜백 함수로 만들어주기
 
-```
+```javascript
 <script>
     const formTag = document.querySelector('form')
 

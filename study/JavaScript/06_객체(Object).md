@@ -9,7 +9,7 @@
     -   식 자체를 넣는 것도 가능하다
     -   ex _ [1+4], ['안녕'+'하세요']
 
-```
+```javascript
 let a = 'age'
 
 const user = {
@@ -81,7 +81,7 @@ const user = {
 
 > **추가하기**
 
-```
+```javascript
 // 1
 object.new_key_name = 'new_value_name'
 
@@ -91,13 +91,13 @@ object['new_key_name'] = 'new_value_name'
 
 > **삭제하기**
 
-```
+```javascript
 delete object.key_name
 ```
 
 > **in을 이용하여 property 존재하는지 확인하기**
 
-```
+```javascript
 const a = [1,2,3,4]
 
 if (2 in a){
@@ -110,7 +110,7 @@ if (2 in a){
 -   기본 값은 boolean형으로 True or False 반환
 -   또한 아래와 같이  없는 키 값에 대해 조건을 달 경우 else 문의 결과가 나오므로 조심!!
 
-```
+```javascript
 const adult = {
   name: '어른'
 }

@@ -37,7 +37,7 @@ Login을 개발자로서 설명하자면 **Session을 Create 하는** 과정�
 
 > **login()**
 
-```
+```PYTHON
 login(request, user, backend=None)
 ```
 
@@ -123,7 +123,7 @@ view.py와 urls.py에서 로그인을 위한 로직을 짰다면 이제 템플�
 
 로그인이 Session의 Create과정이었다면, 로그아웃은 **Session을 Delete 하는** 과정
 
-```
+```PYTHON
 logout(request)
 ```
 
