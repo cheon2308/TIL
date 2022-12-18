@@ -11,7 +11,7 @@
 
 ![](https://k.kakaocdn.net/dn/d1RkhS/btrKqEegceM/irzjiPZs25YkDaAE9LYKNK/img.png)
 
-```
+```PYTHON
 def BFS(G, v): # 그래프 G, 탐색 시작점 v
     visited = [0]*(n+1)		# n: 정점의 개수
     queue = [] 			# 큐 생성

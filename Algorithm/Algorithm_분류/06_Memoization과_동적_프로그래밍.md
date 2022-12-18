@@ -33,7 +33,7 @@
 
 ![](https://k.kakaocdn.net/dn/bWuMOv/btrJRkhhZ1J/sbuPuiKmnJn3IoLiCBZtY1/img.png)
 
-```
+```PYTHON
 def fibo2(n):
 	f = [0,1]
     

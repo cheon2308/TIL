@@ -41,7 +41,7 @@
 2.  각 노드가 유망한지를 점검
 3.  만일 그 노드가 유망하지 않으면, 그 노드의 부모 노드로 돌아가서 검색을 계속한다.
 
-```
+```PYTHON
 def checknode(v): # node
 	if promising(v):
     	if there is a solution at v:
@@ -67,7 +67,7 @@ def checknode(v): # node
 
 아래는 이전에 각 원소가 부분집합에 포함되었는지를 loop 이용하여 확인하고 생성하는 방법이다.
 
-```
+```PYTHON
 bit = [0, 0, 0, 0]
 for i in range(2):
     bit[0] = i
@@ -84,7 +84,7 @@ for i in range(2):
 
 ![](https://k.kakaocdn.net/dn/cGzoJY/btrKkfyPzxQ/lsPuYZJcBwPkPequbXrJEK/img.png)
 
-```
+```PYTHON
 N = 3
 arr = [1, 2, 3] # 우리가 활용할 데이터
 sel = [0] * N # a리스트 (내가 해당 원소를 뽑았는지 체크)
@@ -121,7 +121,7 @@ powerset(0)
 
 > **순열**
 
-```
+```PYTHON
 arr = [1, 2, 3]
 n = 3
 sel = [0] * n
