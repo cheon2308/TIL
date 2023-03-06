@@ -2,7 +2,7 @@
 
 Django Template의 정의는 **"데이터 표현을 제어하는 도구이자 표현에 관련된 로직"**이라고 말할 수 있다.
 
-- Django Template을 이용한 HTML 정적 부분과 동적 콘텐츠를 삽입
+- Django Template을 이용한 HTML 정적 부분과 동적 콘텐츠를 삽입 
 - Template System의 기본 목표를 숙지하자
 
 Template System이란 **데이터 표현을 제어하는 도구이자 표현에 관련된 로직을 담당**하는 것으로 Template의 정의로 보면 된다..
