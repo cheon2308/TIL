@@ -1,4 +1,4 @@
-;p-[==0*   ]
+
 [백준 2342_Dance Dance Revolution](https://www.acmicpc.net/problem/2342)
 
 #### 시간 제한 2초, 메모리 제한 128MB
