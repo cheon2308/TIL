@@ -28,7 +28,7 @@
 
 첫째 줄에 P1의 (x1, y1), 둘째 줄에 P2의 (x2, y2), 셋째 줄에 P3의 (x3, y3)가 주어진다. (-10,000 ≤ x1, y1, x2, y2, x3, y3 ≤ 10,000) 모든 좌표는 정수이다. P1, P2, P3의 좌표는 서로 다르다.
 
-```
+```python
 dot = []
 for i in range(3):
     dot.append(list(map(int, input().split())))
