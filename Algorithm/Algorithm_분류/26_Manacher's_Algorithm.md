@@ -57,7 +57,7 @@ i-dp[i]-1, i+dp[i]+1번째가 같은지 탐색하며 dp[i]를 1씩 올려주면 
 
 ![](https://blog.kakaocdn.net/dn/buNAnw/btrWRD8SbB2/RcxOg9fj24QBeVcWgAfHLK/img.png)
 
-```
+```c++
 string t,s;
 int dp[MAX], n, r=-1, k=-1;
 
@@ -75,7 +75,7 @@ int main() {
 
 또는 반복문의 범위를 2*N-1로 하여 홀수 길이와 짝수 길이를 번갈아 가며 탐색해줄 수도 있다.
 
-```
+```python
 from sys import stdin
 input = stdin.readline
 
