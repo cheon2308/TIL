@@ -549,13 +549,13 @@ b = copy.deepcopy(a) 같이 깊은 복사 이용
   - Object라는 꾸러미 안에 특정 기준에 맞춰서(스스로가 정함) 필요한 Data와 Method를 넣음
   
   - 데이터와 기능(Method) 분리, 추상화된 구조(인터페이스)
-    
-    <img src="python_classassets/1ad69ebb46a515227989d82acf468ba5db05754b.png" title="" alt="객체지향.png" width="401">
+
+<img src="python_classassets/1ad69ebb46a515227989d82acf468ba5db05754b.png" title="" alt="객체지향.png" width="401">
 
 #### 필요한 이유는 ?
 
 1. 추상화
-- 복잡한거를 숨기로 필요한거를 보여준다.
+- 복잡한거를 숨기고고 필요한거를 보여준다.
 
 # 객체(컴퓨터 과학)
 
@@ -652,7 +652,7 @@ b = copy.deepcopy(a) 같이 깊은 복사 이용
 
 ##### 인스턴스 변수
 
-> 인스턴스가 개인적으로 가지고 있는 속성(attribute)SS
+> 인스턴스가 개인적으로 가지고 있는 속성(attribute)
 > 각 인스턴스들의 고유한 변수
 
 - 생성자 메서드``(__init__)``에서 ``self.<name>``으로 정의
